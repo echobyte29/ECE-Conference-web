@@ -34,8 +34,8 @@ export default function CommitteePage() {
         />
 
         <CommitteeSection
-          title="Technical Program Committee"
-          members={COMMITTEES.technicalCommittee}
+          title="Steering Committee"
+          members={COMMITTEES.steeringCommittee}
           delay={0.4}
         />
 
