@@ -52,14 +52,14 @@ export default function CommitteePage() {
         />
 
         <CommitteeSection
-          title="Hospitality Committee"
-          members={COMMITTEES.hospitality}
+          title="Co-Convener"
+          members={COMMITTEES.coConvener}
           delay={0.7}
         />
 
         <CommitteeSection
-          title="Website & Conference Portal"
-          members={COMMITTEES.website}
+          title="Organizing Committee"
+          members={COMMITTEES.organizing}
           delay={0.8}
         />
 
