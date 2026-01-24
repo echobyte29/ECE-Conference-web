@@ -260,6 +260,12 @@ export const COMMITTEES = {
     { name: "Dr. Prasant Kumar Pattnaik", affiliation: "Associate Professor, BITS, Hyderabad" },
     { name: "Dr. Venkateswaran Rajagopalan", affiliation: "Associate Professor, BITS, Hyderabad" },
   ],
+  publicity: [
+    { name: "Dr. V Sahithi", affiliation: "KLH Bachupally Campus" },
+  ],
+  registration: [
+    { name: "Dr. A Kiran Kumar", affiliation: "KLH Bachupally Campus" },
+  ],
 };
 
 export const UNIVERSITY_INFO = {
