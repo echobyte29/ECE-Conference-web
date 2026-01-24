@@ -4,8 +4,8 @@ import CommitteeSection from "@/components/committee-section";
 import { COMMITTEES } from "@/lib/constants";
 
 export const metadata = {
-  title: "Committee | ICNVCT 2025",
-  description: "Organizing committee and advisory board of ICNVCT 2025",
+  title: "Committee | ICEI-CPSCT 2026",
+  description: "Organizing committee and advisory board of ICEI-CPSCT 2026",
 };
 
 export default function CommitteePage() {
@@ -34,45 +34,39 @@ export default function CommitteePage() {
         />
 
         <CommitteeSection
-          title="Technical Program Committee"
-          members={COMMITTEES.technicalCommittee}
+          title="Convener"
+          members={COMMITTEES.convener}
           delay={0.4}
         />
 
         <CommitteeSection
-          title="International Advisory Committee"
-          members={COMMITTEES.internationalAdvisory}
+          title="Co-Convener"
+          members={COMMITTEES.coConvener}
           delay={0.5}
+        />
+
+        <CommitteeSection
+          title="Steering Committee"
+          members={COMMITTEES.steeringCommittee}
+          delay={0.6}
         />
 
         <CommitteeSection
           title="Organizing Committee"
           members={COMMITTEES.organizing}
-          delay={0.6}
-        />
-
-        <CommitteeSection
-          title="Hospitality Committee"
-          members={COMMITTEES.hospitality}
           delay={0.7}
         />
 
         <CommitteeSection
-          title="Website & Conference Portal"
-          members={COMMITTEES.website}
+          title="International Technical Advisory Committee"
+          members={COMMITTEES.internationalAdvisory}
           delay={0.8}
         />
 
         <CommitteeSection
-          title="Digital Media, Publicity & Marketing Committee"
-          members={COMMITTEES.publicity}
+          title="National Technical Advisory Committee"
+          members={COMMITTEES.nationalAdvisory}
           delay={0.9}
-        />
-
-        <CommitteeSection
-          title="Registration Committee"
-          members={COMMITTEES.registration}
-          delay={1.0}
         />
       </div>
     </div>

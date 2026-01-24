@@ -7,8 +7,8 @@ import { TRACKS } from "@/lib/constants";
 import { FiFileText, FiCheck } from "react-icons/fi";
 
 export const metadata = {
-  title: "Call for Papers | ICNVCT 2025",
-  description: "Submit your research papers for ICNVCT 2025 - Topics and submission guidelines",
+  title: "Call for Papers | ICEI-CPSCT 2026",
+  description: "Submit your research papers for ICEI-CPSCT 2026 - Topics and submission guidelines",
 };
 
 export default function CallForPapersPage() {
@@ -29,14 +29,16 @@ export default function CallForPapersPage() {
             </div>
             <p className="text-gray-700 mb-4">
               Authors are invited to submit original and unpublished research papers with an innovative idea on
-              topics within the broad areas (but not limited to): Electronics, Signal Processing, Communication,
-              Embedded Systems.
+              topics within the broad areas of emerging and integrated cyber-physical systems and communication 
+              technologies, including (but not limited to): Artificial Intelligence & Machine Learning, 
+              Internet of Things, FPGA Design, Cryptography, Hardware Security, and Secure Communication.
             </p>
             <p className="text-gray-700">
-              The conference seeks to foster collaboration and knowledge sharing among participants,
-              playing a pivotal role in shaping the future of these rapidly evolving fields.
-              ICNVCT 2025 will feature keynote talks by distinguished speakers from renowned
-              institutions, alongside technical sessions for paper presentations.
+              ICEI-CPSCT 2026 aims to serve as a premier global forum for researchers, academicians, and 
+              industry professionals. The conference focuses on emerging and integrated cyber-physical systems 
+              that seamlessly combine hardware, software, communication technologies, and intelligent algorithms. 
+              The conference emphasizes advancements in AI, ML, and Deep Learning for intelligent, connected, 
+              and real-time cyber-physical applications.
             </p>
           </CardContent>
         </Card>
@@ -48,7 +50,7 @@ export default function CallForPapersPage() {
         <div className="mb-6 flex flex-wrap gap-2">
           {TRACKS.map((track, index) => (
             <Badge key={index} variant="secondary2" className="text-sm py-1 px-3">
-              {track.name.split(":")[0]}
+              {track.name}
             </Badge>
           ))}
         </div>
@@ -63,27 +65,31 @@ export default function CallForPapersPage() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <FiCheck className="mt-1 mr-2 text-conference-primary" />
-                <span>All papers must be original and not simultaneously submitted to another journal or conference.</span>
+                <span>Authors must submit the full length paper in the prescribed Conference Template.</span>
               </li>
               <li className="flex items-start">
                 <FiCheck className="mt-1 mr-2 text-conference-primary" />
-                <span>Papers should be submitted in IEEE format and should not exceed 6 pages.</span>
+                <span>Only registered delegates can attend the conference.</span>
               </li>
               <li className="flex items-start">
                 <FiCheck className="mt-1 mr-2 text-conference-primary" />
-                <span>All papers will be peer-reviewed by at least two independent reviewers.</span>
+                <span>At least one author must register and present the paper to include it in the proceedings.</span>
               </li>
               <li className="flex items-start">
                 <FiCheck className="mt-1 mr-2 text-conference-primary" />
-                <span>At least one author of each accepted paper must register for the conference.</span>
+                <span>Multiple authors of the same paper must register separately.</span>
               </li>
               <li className="flex items-start">
                 <FiCheck className="mt-1 mr-2 text-conference-primary" />
-                <span>Selected papers will be recommended for publication in reputed journals.</span>
+                <span>UG/PG/Research scholars must attach a letter from HOD/Dean/Principal/Research Guide verifying full-time status.</span>
               </li>
               <li className="flex items-start">
                 <FiCheck className="mt-1 mr-2 text-conference-primary" />
-                <span>Plagiarism in any form will lead to rejection of the paper.</span>
+                <span>Registered candidates cannot claim a refund for absence.</span>
+              </li>
+              <li className="flex items-start">
+                <FiCheck className="mt-1 mr-2 text-conference-primary" />
+                <span>All selected, registered, and presented papers will be considered for publication in Scopus indexed journal.</span>
               </li>
             </ul>
           </CardContent>
@@ -96,20 +102,23 @@ export default function CallForPapersPage() {
         <Card>
           <CardContent className="p-6">
             <p className="text-gray-700 mb-4">
-              All papers must be submitted electronically through the conference submission system.
+              All papers must be submitted electronically using the prescribed conference template.
               Authors are requested to follow these steps:
             </p>
             <ol className="list-decimal pl-5 space-y-2 text-gray-700">
-              <li>Prepare your paper according to the conference template.</li>
+              <li>Prepare your paper according to the Conference Template.</li>
+              <li>Ensure your paper addresses topics within the conference scope.</li>
               <li>Convert your paper to PDF format.</li>
-              <li>Submit your paper through the conference submission system.</li>
-              <li>You will receive an acknowledgment email after successful submission.</li>
-              <li>Track the status of your submission through the conference system.</li>
+              <li>Submit your paper through the designated submission system.</li>
+              <li>You will receive confirmation after successful submission.</li>
+              <li>Track the status of your submission and review process.</li>
             </ol>
             <div className="mt-6 p-4 bg-conference-primary/5 rounded-md">
-              <p className="font-medium text-conference-primary">Submission Portal</p>
-              <p className="text-gray-700">                The submission portal will be open from July 10, 2025.
-                Please check back for the submission link.
+              <p className="font-medium text-conference-primary">Who Can Attend</p>
+              <p className="text-gray-700">
+                Participation in this conference is open to faculty members, research scholars, 
+                post-graduate and under-graduate students from academics, research institutes/industry, 
+                and working professionals.
               </p>
             </div>
           </CardContent>
@@ -123,24 +132,24 @@ export default function CallForPapersPage() {
           <CardContent className="p-6">
             <ul className="space-y-2">
               <li className="flex justify-between items-center border-b pb-2">
-                <span className="font-medium">Commencement of Submission</span>
-                <span className="text-conference-primary">July 10, 2025</span>
+                <span className="font-medium">Last Date for Paper Submission</span>
+                <span className="text-conference-primary">March 25, 2026</span>
               </li>
               <li className="flex justify-between items-center border-b pb-2 pt-2">
-                <span className="font-medium">Deadline of Submission</span>
-                <span className="text-conference-primary">August 20, 2025</span>
+                <span className="font-medium">Notification of Acceptance</span>
+                <span className="text-conference-primary">April 25, 2026</span>
               </li>
               <li className="flex justify-between items-center border-b pb-2 pt-2">
-                <span className="font-medium">Paper Acceptance Notification</span>
-                <span className="text-conference-primary">October 10, 2025</span>
+                <span className="font-medium">Submission of Camera-Ready Paper</span>
+                <span className="text-conference-primary">May 01, 2026</span>
               </li>
               <li className="flex justify-between items-center border-b pb-2 pt-2">
-                <span className="font-medium">Camera Ready Copy</span>
-                <span className="text-conference-primary">October 24, 2025</span>
+                <span className="font-medium">Conference Registration</span>
+                <span className="text-conference-primary">May 01, 2026</span>
               </li>
               <li className="flex justify-between items-center pb-2 pt-2">
                 <span className="font-medium">Conference Dates</span>
-                <span className="text-conference-primary">December 19-21, 2025</span>
+                <span className="text-conference-primary">May 15-16, 2026</span>
               </li>
             </ul>
           </CardContent>

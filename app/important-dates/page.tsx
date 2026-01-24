@@ -6,95 +6,65 @@ import { IMPORTANT_DATES } from "@/lib/constants";
 import { FiCalendar, FiAlertCircle } from "react-icons/fi";
 
 export const metadata = {
-  title: "Important Dates | ICNVCT 2025",
-  description: "Important dates and deadlines for ICNVCT 2025 conference",
+  title: "Important Dates | ICEI-CPSCT 2026",
+  description: "Important dates and deadlines for ICEI-CPSCT 2026 conference",
 };
 
 export default function ImportantDatesPage() {
   return (
-    <div className="page-container">
-      <h1 className="section-title">Important Dates</h1>
-      <Separator className="w-24 h-1 mx-auto my-4 bg-conference-primary" />
+    <div className="min-h-screen bg-gradient-to-br from-conference-background to-conference-muted">
+      {/* Header Section */}
+      <section className="pt-24 pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-6 py-3 bg-conference-accent/10 rounded-full border border-conference-accent/20 mb-8">
+              <FiCalendar className="mr-3 text-conference-accent" />
+              <span className="text-conference-accent font-medium tracking-wider uppercase text-sm">
+                Conference Timeline
+              </span>
+            </div>
+            
+            <h1 className="text-4xl md:text-6xl font-light text-conference-primary mb-6 tracking-tight">
+              Important <span className="font-semibold text-conference-accent">Dates</span>
+            </h1>
+            
+            <div className="w-32 h-0.5 mx-auto mb-8 bg-gradient-to-r from-conference-accent to-conference-secondary"></div>
+            
+            <p className="text-lg text-conference-text/70 max-w-4xl mx-auto leading-relaxed font-light">
+              Plan your research journey with these <span className="text-conference-accent font-medium">critical milestones</span> for 
+              ICEI-CPSCT 2026. Please ensure you meet all deadlines to secure your participation.
+            </p>
+          </div>
 
-      <div className="max-w-4xl mx-auto">
-        {/* Introduction */}
-        <section className="mb-12">
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex items-center mb-4">
-                <div className="p-2 mr-3 rounded-full bg-conference-primary/10">
-                  <FiCalendar className="h-6 w-6 text-conference-primary" />
-                </div>
-                <h2 className="text-xl font-semibold text-conference-primary">Key Dates</h2>
-              </div>
-              <p className="text-gray-700">
-                Please make note of the following important dates related to the conference.
-                Missing these deadlines may result in your paper not being considered for the conference.
-              </p>
-            </CardContent>
-          </Card>
-        </section>
-
-        {/* Timeline */}
-        <section className="mb-12">
-          <DateTimeline events={IMPORTANT_DATES} />
-        </section>
-
-        {/* Additional Information */}
-        <section className="mb-12">
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex items-start mb-4">
-                <div className="p-2 mr-3 rounded-full bg-conference-primary/10 mt-1">
-                  <FiAlertCircle className="h-5 w-5 text-conference-primary" />
+          {/* Important Notice */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="bg-conference-accent/5 border border-conference-accent/20 rounded-2xl p-8">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-conference-accent/10 rounded-xl flex items-center justify-center">
+                  <FiAlertCircle className="w-6 h-6 text-conference-accent" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2 text-conference-secondary">Important Notes</h3>
-                  <ul className="space-y-2 text-gray-700">
-                    <li>All deadlines are at 23:59 hrs (Indian Standard Time, GMT +5:30).</li>
-                    <li>Authors are strongly encouraged to submit their papers well before the deadline to avoid any last-minute technical issues.</li>
-                    <li>Early bird registration offers discounted rates and will close on November 12, 2025.</li>
-                    <li>At least one author of each accepted paper must register for the conference by the early registration deadline.</li>
-                    <li>The conference schedule and program details will be announced after the camera-ready submission deadline.</li>
-                  </ul>
+                  <h3 className="text-xl font-semibold text-conference-primary mb-3">
+                    Submission Guidelines
+                  </h3>
+                  <p className="text-conference-text/80 leading-relaxed font-light">
+                    All deadlines are at <strong>11:59 PM (IST)</strong> on the specified date. 
+                    Late submissions will not be considered. Ensure your research papers meet the 
+                    conference standards and follow the prescribed format guidelines.
+                  </p>
                 </div>
               </div>
-            </CardContent>
-          </Card>
-        </section>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        {/* Registration Deadlines */}
-        <section>
-          <h2 className="section-subtitle mb-6">Registration Deadlines</h2>
-          <Card>
-            <CardContent className="p-6">
-              <ul className="space-y-4">
-                <li className="flex justify-between items-center border-b pb-3">
-                  <div>
-                    <span className="font-medium text-conference-primary">Early Bird Registration</span>
-                    <p className="text-sm text-gray-600">Discounted rates for early registrants</p>
-                  </div>
-                  <span className="font-semibold">November 11, 2025</span>
-                </li>
-                <li className="flex justify-between items-center border-b pb-3 pt-2">
-                  <div>
-                    <span className="font-medium text-conference-primary">Regular Registration</span>
-                    <p className="text-sm text-gray-600">Standard registration rates apply</p>
-                  </div>
-                  <span className="font-semibold">December 06, 2025</span>
-                </li>
-                <li className="flex justify-between items-center pt-2">
-                  <div>
-                    <span className="font-medium text-conference-primary">On-site Registration</span>
-                    <p className="text-sm text-gray-600">Higher rates for on-site registration</p>
-                  </div>
-                  <span className="font-semibold">December 19-21, 2025</span>
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
-        </section>
-      </div>
+      {/* Timeline Section */}
+      <section className="pb-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <DateTimeline events={IMPORTANT_DATES} />
+        </div>
+      </section>
     </div>
   );
 }

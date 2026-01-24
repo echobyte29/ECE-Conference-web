@@ -7,9 +7,9 @@ import Footer from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ICNVCT 2025 - NextGen VLSI & Communication Technologies",
+  title: "ICEI-CPSCT 2026 - Emerging and Integrated Cyber-Physical Systems & Communication Technologies",
   description:
-    "International Conference on NextGen VLSI & Communication Technologies (ICNVCT 2025) - October 23-25, 2025 at KL University, Bachupally, Hyderabad",
+    "International Conference on Emerging and Integrated Cyber-Physical Systems & Communication Technologies (ICEI-CPSCT 2026) - May 15-16, 2026 at KLEF Bowrampet Campus, Hyderabad",
 };
 
 export default function RootLayout({

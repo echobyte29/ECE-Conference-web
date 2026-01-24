@@ -5,8 +5,8 @@ import { FiMapPin, FiInfo, FiNavigation2 } from "react-icons/fi";
 import { CONFERENCE_VENUE } from "@/lib/constants";
 
 export const metadata = {
-  title: "Venue | ICNVCT 2025",
-  description: "Venue information for ICNVCT 2025 at KL University, Hyderabad",
+  title: "Venue | ICEI-CPSCT 2026",
+  description: "Venue information for ICEI-CPSCT 2026 at KLEF Bowrampet Campus, Hyderabad",
 };
 
 export default function VenuePage() {
@@ -29,9 +29,12 @@ export default function VenuePage() {
               <h3 className="text-xl font-semibold mb-4 text-conference-secondary">
                 {CONFERENCE_VENUE}
               </h3>
-              <p className="text-gray-700 mb-6">                The conference will be held at the state-of-the-art facilities of KL University,
-                Bowrampet, Hyderabad. The venue is equipped with modern amenities and offers an
-                ideal environment for academic discussions and networking.
+              <p className="text-gray-700 mb-6">
+                The conference will be held at the state-of-the-art facilities of KLEF Bowrampet Campus,
+                Hyderabad. KLEF (Koneru Lakshmaiah Education Foundation) Deemed to be University has 
+                inaugurated its second off campus in A.Y. 2023-2024 in Bowrampet Village, Medchal, 
+                Malkajgiri District, Greater Hyderabad. The venue is equipped with modern amenities 
+                and offers an ideal environment for academic discussions and networking.
               </p>
 
               <div className="bg-gray-100 p-4 rounded-md mb-6">
@@ -39,10 +42,11 @@ export default function VenuePage() {
                   <FiInfo className="mr-2 text-conference-primary" />
                   Address
                 </h4>
-                <p className="text-gray-700">                  KL University<br />
-                  Bowrampet, Hyderabad<br />
-                  Greater Hyderabad, Telangana<br />
-                  India
+                <p className="text-gray-700">
+                  KLEF Bowrampet Campus<br />
+                  Bowrampet Village, Medchal<br />
+                  Malkajgiri District, Greater Hyderabad<br />
+                  Telangana, India
                 </p>
               </div>
 
@@ -96,8 +100,9 @@ export default function VenuePage() {
                 It is also known as the "City of Pearls" due to its historical association with the pearl trade.
               </p>
               <p className="text-gray-700">
-                Hyderabad has a pleasant climate in October, with average temperatures ranging from 20°C to 30°C,
-                making it an ideal time to visit the city and attend the conference.
+                Hyderabad has pleasant weather in May, with average temperatures ranging from 25°C to 35°C.
+                The conference is scheduled during a comfortable time to visit the city and participate in 
+                academic activities.
               </p>
             </CardContent>
           </Card>

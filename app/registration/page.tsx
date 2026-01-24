@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 import { FiCreditCard, FiAlertCircle, FiCheckCircle, FiHelpCircle } from "react-icons/fi";
 
 export const metadata = {
-  title: "Registration | ICNVCT 2025",
-  description: "Registration information and fees for ICNVCT 2025 conference",
+  title: "Registration | ICEI-CPSCT 2026",
+  description: "Registration information and fees for ICEI-CPSCT 2026 conference",
 };
 
 export default function RegistrationPage() {
@@ -22,8 +22,8 @@ export default function RegistrationPage() {
             <FiAlertCircle className="h-6 w-6 text-conference-primary" />
           </div>
           <p className="text-lg text-gray-700">
-            Registration will open on <span className="font-semibold">May 10, 2025</span>.
-            Early bird registration ends on <span className="font-semibold">September 20, 2025</span>.
+            Registration deadline is <span className="font-semibold">May 01, 2026</span>.
+            Conference dates: <span className="font-semibold">May 15-16, 2026</span>.
           </p>
         </div>
 
@@ -32,69 +32,60 @@ export default function RegistrationPage() {
           <h2 className="section-subtitle mb-6 text-center">Registration Fees</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            {/* Early Bird */}
-            <Card className="border-t-4 border-t-conference-secondary">
+            {/* Non-IEEE */}
+            <Card className="border-t-4 border-t-conference-primary">
               <CardHeader className="pb-2 text-center">
-                <CardTitle className="text-xl text-conference-secondary">
-                  Early Bird Registration
+                <CardTitle className="text-xl text-conference-primary">
+                  Non-IEEE Members
                 </CardTitle>
-                <p className="text-sm text-gray-500">Until November 12, 2025</p>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex justify-between py-2 border-b">
-                    <span>Authors (Indian)</span>
-                    <span className="font-semibold">₹ 8,000</span>
+                    <span>Faculty/Research Scholar</span>
+                    <span className="font-semibold">₹ 2,500 ($ 30)</span>
                   </li>
                   <li className="flex justify-between py-2 border-b">
-                    <span>Authors (Foreign)</span>
-                    <span className="font-semibold">$ 300</span>
+                    <span>Industry Members</span>
+                    <span className="font-semibold">₹ 3,000 ($ 35)</span>
                   </li>
                   <li className="flex justify-between py-2 border-b">
-                    <span>Students (Indian)</span>
-                    <span className="font-semibold">₹ 5,000</span>
-                  </li>
-                  <li className="flex justify-between py-2 border-b">
-                    <span>Students (Foreign)</span>
-                    <span className="font-semibold">$ 200</span>
+                    <span>Students</span>
+                    <span className="font-semibold">₹ 2,000 ($ 25)</span>
                   </li>
                   <li className="flex justify-between py-2">
-                    <span>Attendees (without paper)</span>
-                    <span className="font-semibold">₹ 3,000</span>
+                    <span>Attendees</span>
+                    <span className="font-semibold">₹ 1,000 ($ 10)</span>
                   </li>
                 </ul>
               </CardContent>
             </Card>
 
-            {/* Regular Registration */}
-            <Card className="border-t-4 border-t-conference-primary">
+            {/* IEEE Members */}
+            <Card className="border-t-4 border-t-conference-secondary">
               <CardHeader className="pb-2 text-center">
-                <CardTitle className="text-xl text-conference-primary">
-                  Regular Registration
+                <CardTitle className="text-xl text-conference-secondary">
+                  IEEE Members
                 </CardTitle>
-                <p className="text-sm text-gray-500">After November 12, 2025</p>
+                <p className="text-sm text-green-600 font-medium">Discounted Rates</p>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex justify-between py-2 border-b">
-                    <span>Authors (Indian)</span>
-                    <span className="font-semibold">₹ 10,000</span>
+                    <span>Faculty/Research Scholar</span>
+                    <span className="font-semibold">₹ 2,000 ($ 25)</span>
                   </li>
                   <li className="flex justify-between py-2 border-b">
-                    <span>Authors (Foreign)</span>
-                    <span className="font-semibold">$ 350</span>
+                    <span>Industry Members</span>
+                    <span className="font-semibold">₹ 2,500 ($ 30)</span>
                   </li>
                   <li className="flex justify-between py-2 border-b">
-                    <span>Students (Indian)</span>
-                    <span className="font-semibold">₹ 6,000</span>
-                  </li>
-                  <li className="flex justify-between py-2 border-b">
-                    <span>Students (Foreign)</span>
-                    <span className="font-semibold">$ 250</span>
+                    <span>Students</span>
+                    <span className="font-semibold">₹ 1,500 ($ 20)</span>
                   </li>
                   <li className="flex justify-between py-2">
-                    <span>Attendees (without paper)</span>
-                    <span className="font-semibold">₹ 4,000</span>
+                    <span>Attendees</span>
+                    <span className="font-semibold">₹ 500 ($ 5)</span>
                   </li>
                 </ul>
               </CardContent>
@@ -102,9 +93,11 @@ export default function RegistrationPage() {
           </div>
 
           <div className="bg-gray-50 p-4 rounded-md text-sm text-gray-600">
-            <p>* All fees are inclusive of taxes</p>
-            <p>* Student registrations require valid student ID proof</p>
-            <p>* At least one author per accepted paper must register</p>
+            <p>* Registration fee includes access to all sessions, conference kit, snacks & lunch</p>
+            <p>* UG/PG/Research scholars must attach a letter from HOD/Dean/Principal/Research Guide verifying full-time status</p>
+            <p>* At least one author must register and present the paper to include it in the proceedings</p>
+            <p>* Multiple authors of the same paper must register separately</p>
+            <p>* Registered candidates cannot claim a refund for absence</p>
           </div>
         </section>
 
@@ -120,11 +113,11 @@ export default function RegistrationPage() {
                 </li>
                 <li className="flex items-start">
                   <FiCheckCircle className="text-conference-primary mt-1 mr-3 flex-shrink-0" />
-                  <span>Conference kit including program schedule and proceedings</span>
+                  <span>Conference kit including program schedule</span>
                 </li>
                 <li className="flex items-start">
                   <FiCheckCircle className="text-conference-primary mt-1 mr-3 flex-shrink-0" />
-                  <span>Lunch and refreshments during the conference days</span>
+                  <span>Lunch and snacks during conference days</span>
                 </li>
                 <li className="flex items-start">
                   <FiCheckCircle className="text-conference-primary mt-1 mr-3 flex-shrink-0" />
@@ -132,11 +125,15 @@ export default function RegistrationPage() {
                 </li>
                 <li className="flex items-start">
                   <FiCheckCircle className="text-conference-primary mt-1 mr-3 flex-shrink-0" />
-                  <span>Publication of accepted paper in conference proceedings</span>
+                  <span>Conference proceedings with ISBN</span>
                 </li>
                 <li className="flex items-start">
                   <FiCheckCircle className="text-conference-primary mt-1 mr-3 flex-shrink-0" />
-                  <span>Conference dinner (for full registration only)</span>
+                  <span>Consideration for publication in Scopus indexed journal (with APC if applicable)</span>
+                </li>
+                <li className="flex items-start">
+                  <FiCheckCircle className="text-conference-primary mt-1 mr-3 flex-shrink-0" />
+                  <span>Selected papers may be recommended for IRJMT journal submission</span>
                 </li>
               </ul>
             </CardContent>
@@ -145,48 +142,93 @@ export default function RegistrationPage() {
 
         {/* Payment Methods */}
         <section className="mb-12">
-          <h2 className="section-subtitle mb-6">Payment Methods</h2>
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex items-start mb-6">
-                <FiCreditCard className="text-conference-primary mt-1 mr-3 flex-shrink-0 h-5 w-5" />
-                <div>
-                  <h3 className="font-medium text-lg mb-2">Online Payment</h3>
-                  <p className="text-gray-700 mb-2">
-                    Secure online payment options will be available through the registration portal.
-                    We accept all major credit/debit cards and net banking.
-                  </p>
+          <h2 className="section-subtitle mb-6">Payment Methods & Registration</h2>
+          <div className="space-y-6">
+            <Card>
+              <CardContent className="p-6">
+                <div className="flex items-start mb-6">
+                  <FiCreditCard className="text-conference-primary mt-1 mr-3 flex-shrink-0 h-5 w-5" />
+                  <div>
+                    <h3 className="font-medium text-lg mb-2">Online Registration</h3>
+                    <p className="text-gray-700 mb-2">
+                      Register online through Google Forms:
+                    </p>
+                    <a href="https://forms.gle/77d6Y8t9wzjrS4jc7" target="_blank" rel="noopener noreferrer" className="text-conference-primary hover:underline font-medium">
+                      https://forms.gle/77d6Y8t9wzjrS4jc7
+                    </a>
+                  </div>
                 </div>
-              </div>
+              </CardContent>
+            </Card>
 
-              <div className="flex items-start">
-                <FiCreditCard className="text-conference-primary mt-1 mr-3 flex-shrink-0 h-5 w-5" />
-                <div>
-                  <h3 className="font-medium text-lg mb-2">Bank Transfer</h3>
-                  <p className="text-gray-700 mb-2">
-                    Payment can also be made via direct bank transfer. Bank details will be provided
-                    upon request and in the registration portal.
-                  </p>
+            <Card>
+              <CardContent className="p-6">
+                <div className="flex items-start">
+                  <FiCreditCard className="text-conference-primary mt-1 mr-3 flex-shrink-0 h-5 w-5" />
+                  <div className="w-full">
+                    <h3 className="font-medium text-lg mb-4">Bank Transfer Details</h3>
+                    <div className="bg-gray-50 p-4 rounded-lg space-y-2">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                          <p className="font-semibold">Account Name:</p>
+                          <p className="text-gray-700">KoneruLakshmaiah Education Foundation Bowrampet</p>
+                        </div>
+                        <div>
+                          <p className="font-semibold">Account Number:</p>
+                          <p className="text-gray-700 font-mono">99914455566677</p>
+                        </div>
+                        <div>
+                          <p className="font-semibold">Bank Name:</p>
+                          <p className="text-gray-700">HDFC Bank</p>
+                        </div>
+                        <div>
+                          <p className="font-semibold">IFSC Code:</p>
+                          <p className="text-gray-700 font-mono">HDFC0000109</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </div>
         </section>
 
         {/* Registration Button (Disabled) */}
         <div className="text-center mb-12">
-          <Button
-            disabled
-            className="bg-conference-primary hover:bg-conference-primary/90 text-white py-6 px-8 text-lg"
-          >
-            Registration Opens on July 10, 2025
-          </Button>
+          <a href="https://forms.gle/77d6Y8t9wzjrS4jc7" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-conference-primary hover:bg-conference-primary/90 text-white py-6 px-8 text-lg">
+              Register Now for ICEI-CPSCT 2026
+            </Button>
+          </a>
           <p className="text-sm text-gray-500 mt-2">
-            Registration link will be activated on the opening date
+            Click to access the registration form
           </p>
         </div>
 
         {/* FAQ */}
+        <section className="mb-12">
+          <h2 className="section-subtitle mb-6">Contact for Registration</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="font-medium text-lg mb-3">Dr. R V Sravya</h3>
+                <p className="text-gray-700 mb-2">Assistant Professor</p>
+                <p className="text-gray-700 mb-2">KLH-Bowrampet, KLEF Deemed to be University, Hyderabad</p>
+                <p className="text-gray-700">Mobile: +91-8317648839</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="font-medium text-lg mb-3">Dr. Y. Ramesh Babu</h3>
+                <p className="text-gray-700 mb-2">Assistant Professor</p>
+                <p className="text-gray-700 mb-2">KLH-Bowrampet, KLEF Deemed to be University, Hyderabad</p>
+                <p className="text-gray-700">Mobile: +91-9085236881</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         <section>
           <h2 className="section-subtitle mb-6">Frequently Asked Questions</h2>
           <Card>
@@ -195,40 +237,50 @@ export default function RegistrationPage() {
                 <div>
                   <h3 className="font-medium text-lg flex items-center text-conference-primary">
                     <FiHelpCircle className="mr-2" />
-                    Can I register for specific days only?
+                    Who can attend the conference?
                   </h3>
                   <p className="mt-2 text-gray-700 ml-7">
-                    No, the registration is for the entire conference duration. We do not offer single-day registrations.
+                    Participation is open to faculty members, research scholars, post-graduate and under-graduate students from academics, research institutes/industry, and working professionals.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="font-medium text-lg flex items-center text-conference-primary">
                     <FiHelpCircle className="mr-2" />
-                    What is the cancellation policy?
+                    What documents are required for student registration?
                   </h3>
                   <p className="mt-2 text-gray-700 ml-7">
-                    Cancellations made before November 12, 2025 will receive a 50% refund. No refunds will be provided after this date.
+                    UG/PG/Research scholars must attach a letter from HOD/Dean/Principal/Research Guide verifying full-time status.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="font-medium text-lg flex items-center text-conference-primary">
                     <FiHelpCircle className="mr-2" />
-                    Can I transfer my registration to someone else?
+                    What is the refund policy?
                   </h3>
                   <p className="mt-2 text-gray-700 ml-7">
-                    Yes, registration can be transferred to another person by sending a formal request to the conference email.
+                    Registered candidates cannot claim a refund for absence. Please ensure your availability before registration.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="font-medium text-lg flex items-center text-conference-primary">
                     <FiHelpCircle className="mr-2" />
-                    Will I receive an invoice for my registration?
+                    Do multiple authors need separate registrations?
                   </h3>
                   <p className="mt-2 text-gray-700 ml-7">
-                    Yes, an invoice/receipt will be sent to your registered email address after successful payment.
+                    Yes, multiple authors of the same paper must register separately. At least one author must register and present the paper.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-medium text-lg flex items-center text-conference-primary">
+                    <FiHelpCircle className="mr-2" />
+                    Will papers be published?
+                  </h3>
+                  <p className="mt-2 text-gray-700 ml-7">
+                    All papers will be published in conference proceedings with ISBN. Selected papers will be considered for publication in Scopus indexed journal and may be recommended for IRJMT journal.
                   </p>
                 </div>
               </div>

@@ -52,11 +52,13 @@ const config: Config = {
           foreground: "hsl(var(--card-foreground))",
         },
         conference: {
-          primary: "#1e3a8a", // deep blue
-          secondary: "#3b82f6", // bright blue
-          accent: "#f97316", // orange
-          background: "#f8fafc", // light gray-blue
-          text: "#0f172a", // dark slate
+          primary: "#0f172a", // slate gray - professional
+          secondary: "#334155", // slate - sophisticated
+          accent: "#0369a1", // professional blue
+          background: "#ffffff", // pure white
+          text: "#1e293b", // refined dark
+          muted: "#f8fafc", // subtle background
+          border: "#e2e8f0", // light border
         },
       },
       borderRadius: {

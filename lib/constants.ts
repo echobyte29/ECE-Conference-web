@@ -1,215 +1,271 @@
-export const CONFERENCE_NAME = "1st International Conference on NextGen VLSI & Communication Technologies";
-export const CONFERENCE_SHORT_NAME = "ICNVCT 2025";
-export const CONFERENCE_DATE = "December 19-21, 2025";
-export const CONFERENCE_VENUE = "KL University, Bachupally, Hyderabad, India";
-export const CONFERENCE_EMAIL = "icnvct2025@KL.edu.in";
+export const CONFERENCE_NAME = "International Conference on Emerging and Integrated Cyber-Physical Systems & Communication Technologies";
+export const CONFERENCE_SHORT_NAME = "ICEI-CPSCT 2026";
+export const CONFERENCE_DATE = "May 15-16, 2026";
+export const CONFERENCE_VENUE = "KLEF Bowrampet Campus, Hyderabad, India";
+export const CONFERENCE_EMAIL = "dr.kirankumar@klh.edu.in";
 
 export const IMPORTANT_DATES = [
-  { date: "May 10, 2025", description: "Commencement of Submission" },
-  { date: "June 20, 2025", description: "Deadline of Submission" },
-  { date: "August 10, 2025", description: "Paper Acceptance Notification" },
-  { date: "August 24, 2025", description: "Camera Ready Copy" },
-  { date: "September 20, 2025", description: "Early Registration Deadline" },
-  { date: "October 23-25, 2025", description: "Conference Date" },
+  { date: "March 25, 2026", description: "Last Date for Paper Submission" },
+  { date: "April 25, 2026", description: "Notification of Acceptance" },
+  { date: "May 01, 2026", description: "Submission of Camera-Ready Paper" },
+  { date: "May 01, 2026", description: "Conference Registration" },
+  { date: "May 15-16, 2026", description: "Conference Dates" },
 ];
 
 export const TRACKS = [
   {
-    name: "Track 1: Electronics",
+    name: "Artificial Intelligence (AI) & Machine Learning (ML)",
     topics: [
-      { name: "Microelectronics" },
-      { name: "Nanoelectronics" },
-      { name: "Nano Materials" },
-      { name: "Design of Semiconductor Memories" },
-      { name: "Circuits and Systems" },
-      { name: "Wearable and Implantable Electronics in Biomedical Applications" },
-      { name: "Quantum Computing" },
-      { name: "Electronic Materials" },
-      { name: "Industrial Electronics" },
+      { name: "Deep Learning architectures and optimization" },
+      { name: "Explainable AI (XAI) and trustworthy AI" },
+      { name: "AI for Cyber-Physical Systems" },
+      { name: "Edge AI and TinyML" },
+      { name: "AI-driven signal and image processing" },
+      { name: "Reinforcement learning for control systems" },
+      { name: "Federated and distributed learning" },
+      { name: "AI for healthcare, smart grids, and autonomous systems" },
     ],
   },
   {
-    name: "Track 2: Signal Processing",
+    name: "Internet of Things (IoT)",
     topics: [
-      { name: "Digital Signal Processing" },
-      { name: "AI and Machine Learning for Signal Processing" },
-      { name: "5G and 6G Communication Signal Processing" },
-      { name: "Image and Video Processing" },
-      { name: "Speech and Audio Signal Processing" },
-      { name: "Biomedical Signal Processing" },
-      { name: "Radar and Sonar Signal Processing" },
-      { name: "Real-Time Signal Processing for Edge Computing and IoT Devices" },
-      { name: "Multimedia Signal Processing" },
+      { name: "IoT architectures and protocols" },
+      { name: "Low-power and energy-efficient IoT networks" },
+      { name: "Industrial IoT (IIoT)" },
+      { name: "Smart cities and smart homes" },
+      { name: "IoT data analytics and cloud integration" },
+      { name: "IoT security and privacy" },
+      { name: "Edge and fog computing for IoT" },
+      { name: "IoT applications in healthcare and agriculture" },
     ],
   },
   {
-    name: "Track 3: Communications",
+    name: "FPGA Design",
     topics: [
-      { name: "Mobile Communication" },
-      { name: "UAV Communication" },
-      { name: "RF and Microwave Communication" },
-      { name: "Green Communication" },
-      { name: "5G/6G Wireless Networks and Communication Technologies" },
-      { name: "Optical Wireless Communications" },
-      { name: "Millimeter-Wave Communication Systems" },
-      { name: "Massive MIMO and Beamforming Techniques" },
-      { name: "Wireless Sensor Networks" },
-      { name: "Cognitive Radio Networks and Spectrum Management" },
-      { name: "Vehicular Ad Hoc Networks (VANETs) and V2X Communications" },
-      { name: "Satellite Communication and Space-Based Networks" },
-      { name: "Quantum Communication and Cryptography" },
-      { name: "AI-Driven Communication Networks" },
+      { name: "FPGA-based system design and verification" },
+      { name: "High-level synthesis (HLS)" },
+      { name: "FPGA implementation of AI/ML algorithms" },
+      { name: "Reconfigurable computing" },
+      { name: "FPGA acceleration for signal and image processing" },
+      { name: "Low-power and high-performance FPGA designs" },
+      { name: "FPGA for real-time embedded systems" },
+      { name: "Hardware–software co-design" },
     ],
   },
   {
-    name: "Track 4: VLSI Systems",
+    name: "Cryptography",
     topics: [
-      { name: "Low-Power VLSI Circuits" },
-      { name: "High Speed VLSI Circuits" },
-      { name: "Hardware Acceleration for AI and Machine Learning" },
-      { name: "3D ICs and Heterogeneous Integration" },
-      { name: "Field Programmable Gate Arrays (FPGAs) in Advanced Computing" },
-      { name: "VLSI Architectures for Neural Networks and Deep Learning" },
-      { name: "High-Level Synthesis and Automated Design Tools" },
-      { name: "Reliability, Testing, and Fault-Tolerant VLSI Systems" },
-      { name: "Spintronics and Emerging Memory Technologies" },
-      { name: "VLSI Design for IoT and Edge Computing Applications" },
-      { name: "Secure VLSI Design and Hardware Security" },
-      { name: "ASIC Design" },
+      { name: "Symmetric and asymmetric cryptographic algorithms" },
+      { name: "Lightweight cryptography for IoT" },
+      { name: "Post-quantum cryptography" },
+      { name: "Cryptographic protocols and key management" },
+      { name: "Hardware implementation of cryptographic algorithms" },
+      { name: "Secure authentication and authorization techniques" },
+      { name: "Blockchain and distributed ledger technologies" },
+      { name: "Cryptanalysis and cryptographic attacks" },
     ],
   },
   {
-    name: "Track 5: Embedded Systems",
+    name: "Hardware Security",
     topics: [
-      { name: "Real-Time Embedded Systems for IoT" },
-      { name: "Embedded AI and Machine Learning at the Edge" },
-      { name: "Low-Power Embedded Systems for Wearable Devices" },
-      { name: "Embedded System Security" },
-      { name: "Embedded Systems for Automotive Applications" },
-      { name: "Embedded Systems for Robotics and Drones" },
-      { name: "Embedded Operating Systems and RTOS Design" },
-      { name: "FPGA Based Embedded Systems" },
-      { name: "Reconfigurable Computing" },
-      { name: "Distributed Systems" },
-      { name: "Sensor Integration and Data Fusion in Embedded Systems" },
+      { name: "Physical Unclonable Functions (PUFs)" },
+      { name: "Hardware Trojans and countermeasures" },
+      { name: "Side-channel attack analysis and protection" },
+      { name: "Secure IC and SoC design" },
+      { name: "Trustworthy hardware architectures" },
+      { name: "Secure boot and firmware protection" },
+      { name: "Hardware authentication techniques" },
+      { name: "Supply chain security for hardware" },
+    ],
+  },
+  {
+    name: "Secure Communication",
+    topics: [
+      { name: "Secure wireless communication systems" },
+      { name: "Cryptographic protocols for secure communication" },
+      { name: "Secure communication for IoT and Cyber-Physical Systems" },
+      { name: "Lightweight security protocols for low-power networks" },
+      { name: "Secure routing and data transmission techniques" },
+      { name: "Secure communication in 5G and emerging 6G networks" },
+      { name: "Quantum-safe and post-quantum secure communication" },
+      { name: "Secure satellite and vehicular communications" },
+      { name: "Intrusion detection and prevention in communication networks" },
     ],
   },
 ];
 
 export const KEYNOTE_SPEAKERS = [
   {
-    name: "Prof. Dipankar Bandopadhyay",
-    affiliation: "Professor, IIT Guwahati",
+    name: "Dr. Sesham Srinu",
+    affiliation: "Senior Lecturer, University of Namibia",
+    expertise: "Cyber-Physical Systems & IoT Security"
   },
   {
-    name: "Dr. P Ranga Babu",
-    affiliation: "Associate Professor, IIITDM Kurnool",
+    name: "Prof. Kandasamy Prabakar",
+    affiliation: "Professor at Pusan National University, Republic of Korea",
+    expertise: "Smart Grid Technologies & Power Systems"
   },
   {
-    name: "Dr Nirmal Roy",
-    affiliation: "Assistant Professor, MNNIT Allahabad",
+    name: "Prof. Hee-Je Kim",
+    affiliation: "Professor at Pusan National University, Republic of Korea",
+    expertise: "Advanced Communication Systems"
   },
   {
-    name: "Prof. D Ramu",
-    affiliation: "Professor, IIT Guwahati",
+    name: "Dr. Challa Sesha Sai Pavan Kumar",
+    affiliation: "Senior Researcher, NIST, USA",
+    expertise: "AI/ML for Cyber-Physical Systems"
   },
   {
-    name: "Dr Dipjyoti Das",
-    affiliation: "Assistant Professor, NIT Silchar",
-  },
-  {
-    name: "Dr. Chandrashekhar Thejaswi",
-    affiliation: "PS System Architect, Nokia Networks, Bangalore",
-  },
-  {
-    name: "Mr. Prabhat Kumar",
-    affiliation: "Scientist F, DRDO, Bangalore",
-  },
-  {
-    name: "Dr Vimal Kumar Singh",
-    affiliation: "Assistant Professor, MNNIT Allahabad",
-  },
-  {
-    name: "Dr. Murali Mohan Cheepu",
-    affiliation: "Research Manager, Starwelds Inc, Republic of Korea",
-  },
-  {
-    name: "Dr. Anil Kumar Vuppala",
-    affiliation: "Associate Professor, IIIT Hyderabad",
-  },
-  {
-    name: "Prof. Samrat L Sabat",
-    affiliation: "University of Hyderabad",
-  },
-  {
-    name: "Dr. R. Siva Kumar",
-    affiliation: "Professor, VIT Vellore",
-  },
-  {
-    name: "Dr. D. Amaranatha Reddy",
-    affiliation: "Assistant Professor, IIITDM Kurnool",
+    name: "Dr. Naveen Halappa",
+    affiliation: "Postdoctoral Fellow, KAUST, Saudi Arabia",
+    expertise: "Edge Computing & Distributed Systems"
   },
   {
     name: "Dr. Shyam Akashe",
-    affiliation: "Professor, ITM University, Gwalior",
+    affiliation: "Dean (International Cooperation & Projects) and Professor, ITM University",
+    expertise: "VLSI Design & Embedded Systems"
+  },
+  {
+    name: "Dr. Murali Mohan Cheepu",
+    affiliation: "Research Manager, Starwelds Inc, Busan, Republic of Korea",
+    expertise: "Industrial IoT & Manufacturing Systems"
+  },
+  {
+    name: "Dr. Reddi Mohan Naidu Kalla",
+    affiliation: "Associate Professor, Yeungnam University, Republic of Korea",
+    expertise: "Wireless Communication Technologies"
+  },
+  {
+    name: "Dr. Mannin Himanshu",
+    affiliation: "E-Mobility Senior Engineer, RSTER, Zaventem, Belgium",
+    expertise: "Electric Vehicle Systems & Smart Mobility"
+  },
+  {
+    name: "Dr. Prasad Naik Ramavath",
+    affiliation: "Assistant Professor, National Institute of Technology, Rourkela, India",
+    expertise: "Signal Processing & Machine Learning"
+  },
+  {
+    name: "Mr. Lava K Vandrangi",
+    affiliation: "Senior Engineer, Pepco Holdings, USA",
+    expertise: "Power Grid Modernization & Smart Infrastructure"
+  },
+  {
+    name: "Dr. Mohd Amiruddin Bin ABD Rahman",
+    affiliation: "Professor, University of Putra Malaysia, Malaysia",
+    expertise: "Renewable Energy & Sustainable Systems"
+  },
+  {
+    name: "Dr. Ujval Mutyala",
+    affiliation: "Senior Research Fellow, Eastern Illinois University, Charleston, USA",
+    expertise: "Biomedical Cyber-Physical Systems"
+  },
+  {
+    name: "Dr. Srihansha Chollangi",
+    affiliation: "Senior Research Fellow, Gannon University, USA",
+    expertise: "Advanced Signal Processing & AI"
+  },
+  {
+    name: "Prof. S.V.S. Nageswara Rao",
+    affiliation: "Professor, University of Hyderabad",
+    expertise: "Communications & Network Systems"
+  },
+  {
+    name: "Prof. S.L. Sabat",
+    affiliation: "Professor, University of Hyderabad",
+    expertise: "Digital Signal Processing & Control Systems"
+  },
+  {
+    name: "Dr. S.L.D Varma",
+    affiliation: "Assistant Professor, University of Hyderabad",
+    expertise: "Digital Communications & Signal Processing"
+  },
+  {
+    name: "Dr. P. Rangababu",
+    affiliation: "Associate Professor, IIITDM, Kurnool",
+    expertise: "VLSI Design & Embedded Systems"
   },
 ];
 
 export const COMMITTEES = {
   chiefPatrons: [
-    { name: "Sri Koneru Satyanarayana", affiliation: "President, KLEF" },
-    { name: "Sri Koneru Lakshman Havish", affiliation: "Vice-President, KLEF" },
-    { name: "Sri Koneru Raja Harin", affiliation: "Vice-President, KLEF" },
+    { name: "Sri Koneru Satyanarayana", affiliation: "Chancellor and President, KLEF" },
+    { name: "Sri K. Havish Lakshman", affiliation: "Vice-President, KLEF" },
+    { name: "Sri K. Raja Harin", affiliation: "Vice-President, KLEF" },
   ],
   coPatrons: [
-    { name: "Dr. L Koteswara Rao", affiliation: "Principal, KL Bachupally Campus" },
-    { name: "Dr. Suman Maloji", affiliation: "KL University, Vijayawada" },
-    { name: "Dr. S Srinivasa Rao", affiliation: "HoD, Dept of ECE, KL Bachupally Campus" },
-    { name: "Dr. M Goutham", affiliation: "KL Aziz Nagar Campus" },
+    { name: "Dr. K. S. Jagannatha Rao", affiliation: "Pro-Chancellor, KLEF" },
+    { name: "Dr. G. Pardhasaradhi Varma", affiliation: "Vice Chancellor, KLEF" },
+    { name: "Dr. N. Venkat Ram", affiliation: "Pro-Vice Chancellor, KLEF" },
+    { name: "Dr. K. Rajasekhara Rao", affiliation: "Pro Vice-Chancellor, KLEF" },
+    { name: "Dr. A. V. S. Prasad", affiliation: "Pro-Vice Chancellor, KLEF" },
+    { name: "Dr. K. Subba Rao", affiliation: "Registrar, KLEF" },
   ],
   generalChairs: [
-    { name: "Dr. P Dhilleswararao", affiliation: "KL Bachupally Campus" },
+    { name: "Dr. L Koteswara Rao", affiliation: "Principal, KLEF, Bowrampet Campus" },
+    { name: "Dr. S. Srinivasa Rao", affiliation: "HoD-ECE, KLEF, Bowrampet Campus" },
   ],
-  technicalCommittee: [
-    { name: "Dr. Kalyan S Kasturi", affiliation: "KL Bachupally Campus" },
-    { name: "Dr. V Venu Balaji", affiliation: "KL Bachupally Campus" },
-    { name: "Dr. J Laxmi Prasanna", affiliation: "KL Bachupally Campus" },
-    { name: "Dr. K Hari Kishore", affiliation: "KL University, Vijayawada" },
+  convener: [
+    { name: "Dr. A. Kiran Kumar", affiliation: "KLEF, Bowrampet Campus, Hyderabad" },
   ],
-  internationalAdvisory: [
-    { name: "Prof. Kandasamy Prabakar", affiliation: "Pusan National University, Republic of Korea" },
-    { name: "Prof. Hee-Je Kim", affiliation: "Pusan National University, Republic of Korea" },
-    { name: "Dr. Chandu V.V. Muralee Gopi", affiliation: "University of Sharjah, UAE" },
-    { name: "Dr. Challa Sesha Sai Pavan Kumar", affiliation: "NIST, USA" },
-    { name: "Dr. Naveen Halappa", affiliation: "KAUST, Saudi Arabia" },
-    { name: "Dr. Shyam Akashe", affiliation: "ITM University, India" },
-    { name: "Dr. Murali Mohan Cheepu", affiliation: "Starwelds Inc, Republic of Korea" },
+  coConvener: [
+    { name: "Dr. Nimmala Arun", affiliation: "KLEF, Bowrampet Campus, Hyderabad" },
+  ],
+  steeringCommittee: [
+    { name: "Dr. A. Prabahakara Rao", affiliation: "Professor, KLH Bowrampet Campus" },
+    { name: "Dr. B. Sai Prasad", affiliation: "Professor, KLH Bowrampet Campus" },
+    { name: "Dr. Kalyan S Kasturi", affiliation: "Professor, KLH Bowrampet Campus" },
   ],
   organizing: [
-    { name: "Dr. B Sai Prasad", affiliation: "KL Bachupally Campus" },
-    { name: "Dr. Bhaskar Anand", affiliation: "KL Bachupally Campus" },
-    { name: "Mr. N Lava Prasad", affiliation: "KL Bachupally Campus" },
-    { name: "Dr. Sandeep Chitreddy", affiliation: "KL Aziz Nagar Campus" },
+    { name: "Dr Vuddagiri Ravi Kumar", affiliation: "Associate Professor, KLH Bowrampet Campus" },
+    { name: "Dr Surendra Kota", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
+    { name: "Mr. N Lava Prasad", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
+    { name: "Dr. Vinnakota Venu Balaji", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
+    { name: "Dr R V Sravya", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
+    { name: "Dr V Sahiti", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
+    { name: "Dr Y Ramesh Babu", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
+    { name: "Dr. Bere Praveen Sai", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
+    { name: "Dr V Vaishnavi", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
+    { name: "Dr Rahul LR", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
+    { name: "Dr. Purva Sharma", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
+    { name: "Mr Satya Prasad Gaddamedi", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
   ],
-  hospitality: [
-    { name: "Dr. V Ravi Kumar", affiliation: "KL Bachupally Campus" },
-    { name: "Dr. Y Ramesh Babu", affiliation: "KL Bachupally Campus" },
+  internationalAdvisory: [
+    { name: "Dr. Sesham Srinu", affiliation: "Senior Lecturer, University of Namibia" },
+    { name: "Prof. Kandasamy Prabakar", affiliation: "Professor at Pusan National University, Republic of Korea" },
+    { name: "Prof. Hee-Je Kim", affiliation: "Professor at Pusan National University, Republic of Korea" },
+    { name: "Dr. Challa Sesha Sai Pavan Kumar", affiliation: "Senior Researcher, NIST, USA" },
+    { name: "Dr. Naveen Halappa", affiliation: "Postdoctoral Fellow, KAUST, Saudi Arabia" },
+    { name: "Dr. Shyam Akashe", affiliation: "Dean (International Cooperation & Projects) and Professor, ITM University" },
+    { name: "Dr. Murali Mohan Cheepu", affiliation: "Research Manager, Starwelds Inc, Busan, Republic of Korea" },
+    { name: "Dr. Reddi Mohan Naidu Kalla", affiliation: "Associate Professor, Yeungnam University, Republic of Korea" },
+    { name: "Dr. Mannin Himanshu", affiliation: "E-Mobility Senior Engineer, RSTER, Zaventem, Belgium" },
+    { name: "Dr. Prasad Naik Ramavath", affiliation: "Assistant Professor, National Institute of Technology, Rourkela, India" },
+    { name: "Mr. Lava K Vandrangi", affiliation: "Senior Engineer, Pepco Holdings, USA" },
+    { name: "Dr. Mohd Amiruddin Bin ABD Rahman", affiliation: "Professor, University of Putra Malaysia, Malaysia" },
+    { name: "Dr. Ujval Mutyala", affiliation: "Senior Research Fellow, Eastern Illinois University, Charleston, USA" },
+    { name: "Dr. Srihansha Chollangi", affiliation: "Senior Research Fellow, Gannon University, USA" },
   ],
-  website: [
-    { name: "Dr. A. Prabhakar Rao", affiliation: "KL Bachupally Campus" },
-    { name: "Dr. K Surendra", affiliation: "KL Bachupally Campus" },
-  ],
-  publicity: [
-    { name: "Dr. V Sahithi", affiliation: "KL Bachupally Campus" },
-  ],
-  registration: [
-    { name: "Dr. A Kiran Kumar", affiliation: "KL Bachupally Campus" },
+  nationalAdvisory: [
+    { name: "Prof. S.V.S. Nageswara Rao", affiliation: "Professor, University of Hyderabad" },
+    { name: "Prof. S.L. Sabat", affiliation: "Professor, University of Hyderabad" },
+    { name: "Dr. S.L.D Varma", affiliation: "Assistant Professor, University of Hyderabad" },
+    { name: "Dr. P. Rangababu", affiliation: "Associate Professor, IIITDM, Kurnool" },
+    { name: "Mr. Venkat Reddy", affiliation: "Design Engineer" },
+    { name: "Mr. Anil Kumar", affiliation: "Physical Design Engineer, Infosys" },
+    { name: "Mr. Shravan Kumar", affiliation: "Design Engineer, HCL" },
+    { name: "Dr. Rena Rakesh", affiliation: "Senior Analog & RFIC Design Engineer, Sasken Tech. Ltd." },
+    { name: "Dr. Anakhi Hazarika", affiliation: "Assistant Professor, BITS, Hyderabad" },
+    { name: "Dr. Runa Kumari", affiliation: "Associate Professor, BITS, Hyderabad" },
+    { name: "Dr. Prasant Kumar Pattnaik", affiliation: "Associate Professor, BITS, Hyderabad" },
+    { name: "Dr. Venkateswaran Rajagopalan", affiliation: "Associate Professor, BITS, Hyderabad" },
   ],
 };
 
 export const UNIVERSITY_INFO = {
-  name: "Koneru Lakshmaiah Education Foundation (KLEF)",  shortDesc: "Established university offering quality education in engineering and technology.",
-  longDesc: "KL University Bachupally, Hyderabad is a well renowed university in the city of Hyderabad. The institution offers outstanding undergraduate, postgraduate and doctoral programmes. The institution is dedicated to providing quality education in engineering and technology.",
+  name: "Koneru Lakshmaiah Education Foundation (KLEF)",
+  shortDesc: "Deemed to be university established in 1980-81, offering outstanding undergraduate, postgraduate and doctoral programmes in engineering and management.",
+  longDesc: "Koneru Lakshmaiah Education Foundation (KLEF) Deemed to be university was established in 1980-81, as KL College of Engineering, which was upgraded to KL College of Engineering Autonomous in 2006 by UGC, and was declared as a Deemed to be University in 2009 by UGC, MHRD Government of India. The first off campus, has come up in A.Y 2018-2019 at Hyderabad, Moinabad, Aziznagar Road, near TSPA Junction, on the road leading to Chilkur Balaji temple. KLEF Deemed to be University has inaugurated its second off campus in A.Y. 2023-2024 in Bowrampet Village, Medchal, Malkajgiri District, Greater Hyderabad. KLEF (Deemed to be University) offers outstanding undergraduate, postgraduate and doctoral programmes in engineering and management streams from two campuses Vijayawada and Hyderabad. KLEF has established an ecosystem to promote innovation, including a centre for Innovation, Incubation and Entrepreneurship Cell (IIEC), leading to start-ups in different disciplines. Through publishing research articles in various national and international refereed journals, particularly in Scopus/WoS/SCI Indexed journals, research has taken a quantum leap towards improving its quality, resulting in good h-index.",
 };
 
 export const DEPARTMENT_INFO = {
@@ -220,7 +276,7 @@ export const DEPARTMENT_INFO = {
 };
 
 export const CONFERENCE_INFO = {
-  name: "International Conference on NextGen VLSI & Communication Technologies (ICNVCT 2025)",
-  desc: "The International Conference on NextGen VLSI & Communication Technologies (ICNVCT 2025) aims to provide a comprehensive platform for researchers, academicians, and industry professionals to exchange innovative ideas and present their latest research findings in the field of electronics and communication engineering. With a broad scope, ICNVCT 2025 will cover a diverse range of topics, including electronics, VLSI systems, signal processing, wireless communication systems, and embedded systems. The conference seeks to foster collaboration and knowledge sharing among participants, playing a pivotal role in shaping the future of these rapidly evolving fields. ICNVCT 2025 will feature keynote talks by distinguished speakers from renowned institutions, alongside technical sessions for paper presentations. Researchers are encouraged to submit original contributions addressing current trends and challenges in electronics, communications, signal processing, VLSI and embedded systems. Through this exchange, ICNVCT 2025 aims to advance the frontiers of these disciplines and inspire future developments.",
-  organizer: "Department of Electronics and Communication Engineering, KL University, Bachupally Campus, Hyderabad",
+  name: "International Conference on Emerging and Integrated Cyber-Physical Systems & Communication Technologies (ICEI-CPSCT 2026)",
+  desc: "ICEI-CPSCT 2026 (International Conference on Emerging and Integrated Cyber-Physical Systems & Communication Technologies) aims to serve as a premier global forum for researchers, academicians, and industry professionals. The conference focuses on emerging and integrated cyber-physical systems that seamlessly combine hardware, software, communication technologies, and intelligent algorithms. Key thrust areas include secure devices, embedded and low-power hardware architectures, and next-generation communication networks. ICEI-CPSCT 2026 emphasizes advancements in Artificial Intelligence, Machine Learning, and Deep Learning for intelligent, connected, and real-time cyber-physical applications. The conference also highlights innovations in algorithms for sensing, control, signal processing, networking, and system optimization. It encourages interdisciplinary research addressing challenges related to security, reliability, scalability, and interoperability in cyber-physical and communication systems. Industry-focused sessions and expert talks aim to bridge the gap between theoretical research and real-world deployment. ICEI-CPSCT 2026 promotes collaboration, knowledge exchange, and impactful research in emerging cyber-physical systems and communication technologies.",
+  organizer: "Department of Electronics and Communication Engineering, KLEF Bowrampet Campus, Hyderabad",
 };
