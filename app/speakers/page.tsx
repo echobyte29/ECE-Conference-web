@@ -34,7 +34,7 @@ export default function SpeakersPage() {
             <p className="text-lg text-conference-text/70 max-w-4xl mx-auto leading-relaxed font-light">
               Distinguished experts from academia and industry who will be sharing their
               <span className="text-conference-accent font-medium"> insights and latest research findings </span>
-              at ICEI-CPSCT 2026.
+              at ROCV-AI 2026.
             </p>
           </motion.div>
           

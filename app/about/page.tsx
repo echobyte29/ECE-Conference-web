@@ -9,8 +9,8 @@ import {
 import { FiMap, FiUsers, FiCalendar } from "react-icons/fi";
 
 export const metadata = {
-  title: "About | ICEI-CPSCT 2026",
-  description: "About the University, ECE Department and ICEI-CPSCT 2026 Conference",
+  title: "About | ROCV-AI 2026",
+  description: "About the University, ECE Department and ROCV-AI 2026 Conference",
 };
 
 export default function AboutPage() {
@@ -74,7 +74,7 @@ export default function AboutPage() {
           <div className="p-2 mr-3 rounded-full bg-conference-primary/10">
             <FiCalendar className="h-6 w-6 text-conference-primary" />
           </div>
-          <h2 className="section-subtitle">About ICEI-CPSCT 2026</h2>
+          <h2 className="section-subtitle">About ROCV-AI 2026</h2>
         </div>
         <Card>
           <CardContent className="p-6">

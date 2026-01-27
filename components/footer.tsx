@@ -7,10 +7,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-xl font-light mb-6 tracking-tight">ICEI-CPSCT 2026</h3>
+            <h3 className="text-xl font-light mb-6 tracking-tight">ROCV-AI 2026</h3>
             <p className="text-sm font-light leading-relaxed text-white/80 mb-4">
-              International Conference on Emerging and Integrated Cyber-Physical Systems
-              & Communication Technologies
+              International Conference on Emerging Trends in Robotics, Communication, VLSI,
+              and Artificial Intelligence
             </p>
             <div className="space-y-3 text-sm">
               <p className="flex items-center text-white/80">
@@ -60,20 +60,21 @@ const Footer = () => {
             <div className="space-y-3 text-sm text-white/80 font-light leading-relaxed">
               <p>
                 Department of Electronics and Communication Engineering,<br />
-                KL University, Bachupally Campus,<br />
+                KLEF Bowrampet Campus,<br />
                 Hyderabad
               </p>
               <p className="flex items-center">
                 <FiMail className="mr-3" />
                 dr.kirankumar@klh.edu.in
               </p>
+              <p>Mobile: +91-9703332849</p>
             </div>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/20">
           <p className="text-sm text-center text-white/70 font-light leading-relaxed">
-            &copy; {new Date().getFullYear()} ICEI-CPSCT 2026. All rights reserved.<br />
+            &copy; {new Date().getFullYear()} ROCV-AI 2026. All rights reserved.<br />
             Organized by Department of Electronics and Communication Engineering, KLEF Bowrampet Campus
           </p>
         </div>

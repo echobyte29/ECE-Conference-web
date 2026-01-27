@@ -4,8 +4,8 @@ import CommitteeSection from "@/components/committee-section";
 import { COMMITTEES } from "@/lib/constants";
 
 export const metadata = {
-  title: "Committee | ICEI-CPSCT 2026",
-  description: "Organizing committee and advisory board of ICEI-CPSCT 2026",
+  title: "Committee | ROCV-AI 2026",
+  description: "Organizing committee and advisory board of ROCV-AI 2026",
 };
 
 export default function CommitteePage() {

@@ -7,8 +7,8 @@ import { TRACKS } from "@/lib/constants";
 import { FiFileText, FiCheck } from "react-icons/fi";
 
 export const metadata = {
-  title: "Call for Papers | ICEI-CPSCT 2026",
-  description: "Submit your research papers for ICEI-CPSCT 2026 - Topics and submission guidelines",
+  title: "Call for Papers | ROCV-AI 2026",
+  description: "Submit your research papers for ROCV-AI 2026 - Topics and submission guidelines",
 };
 
 export default function CallForPapersPage() {
@@ -29,16 +29,16 @@ export default function CallForPapersPage() {
             </div>
             <p className="text-gray-700 mb-4">
               Authors are invited to submit original and unpublished research papers with an innovative idea on
-              topics within the broad areas of emerging and integrated cyber-physical systems and communication 
-              technologies, including (but not limited to): Artificial Intelligence & Machine Learning, 
+              topics within the broad areas of Robotics, Communication, VLSI, and Artificial Intelligence, 
+              including (but not limited to): Artificial Intelligence & Machine Learning, 
               Internet of Things, FPGA Design, Cryptography, Hardware Security, and Secure Communication.
             </p>
             <p className="text-gray-700">
-              ICEI-CPSCT 2026 aims to serve as a premier global forum for researchers, academicians, and 
-              industry professionals. The conference focuses on emerging and integrated cyber-physical systems 
-              that seamlessly combine hardware, software, communication technologies, and intelligent algorithms. 
+              ROCV-AI 2026 aims to serve as a premier global forum for researchers, academicians, and 
+              industry professionals. The conference focuses on emerging and integrated intelligent systems 
+              that seamlessly combine robotics, electronics, VLSI hardware, embedded systems, communication technologies, and advanced AI algorithms. 
               The conference emphasizes advancements in AI, ML, and Deep Learning for intelligent, connected, 
-              and real-time cyber-physical applications.
+              and real-time robotic and cyber-physical applications.
             </p>
           </CardContent>
         </Card>

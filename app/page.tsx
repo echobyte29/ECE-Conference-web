@@ -33,34 +33,14 @@ export default function Home() {
           </div>
 
           {/* Content with Image */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8">
             <div className="order-2 lg:order-1">
-              <p className="text-lg text-conference-text/80 leading-relaxed font-light mb-8">
-                {CONFERENCE_INFO.desc}
+              <p className="text-base md:text-lg text-conference-text/80 leading-[1.8] font-light mb-6 text-justify hyphens-auto">
+                ROCV-AI 2026 (International Conference on Emerging Trends in Robotics, Communication, VLSI, and Artificial Intelligence) aims to serve as a premier global forum for researchers, academicians, and industry professionals. The conference focuses on emerging and integrated intelligent systems that seamlessly combine robotics, electronics, VLSI hardware, embedded systems, communication technologies, and advanced AI algorithms.
               </p>
-              
-              {/* Key Highlights */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="flex items-center gap-3 p-4 bg-white/60 rounded-lg border border-conference-border/30">
-                  <div className="w-10 h-10 bg-conference-accent/10 rounded-lg flex items-center justify-center">
-                    <FiUsers className="w-5 h-5 text-conference-accent" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-conference-primary">Global Forum</h4>
-                    <p className="text-sm text-conference-text/70">Researchers & Industry</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-3 p-4 bg-white/60 rounded-lg border border-conference-border/30">
-                  <div className="w-10 h-10 bg-conference-accent/10 rounded-lg flex items-center justify-center">
-                    <FiFileText className="w-5 h-5 text-conference-accent" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-conference-primary">Research Focus</h4>
-                    <p className="text-sm text-conference-text/70">Cyber-Physical Systems</p>
-                  </div>
-                </div>
-              </div>
+              <p className="text-base md:text-lg text-conference-text/80 leading-[1.8] font-light text-justify hyphens-auto">
+                Key thrust areas include AI-driven robotics, on-chip intelligence and VLSI architectures, secure and low-power electronic systems, and next-generation communication technologies. The conference emphasizes advancements in Artificial Intelligence, Machine Learning, and Deep Learning for intelligent, connected, and real-time robotic and cyber-physical applications.
+              </p>
             </div>
             
             <div className="order-1 lg:order-2">
@@ -70,7 +50,7 @@ export default function Home() {
                   <img 
                     src="/klh.jpg" 
                     alt="KL University Hyderabad Campus" 
-                    className="w-full h-64 sm:h-80 object-cover"
+                    className="w-full h-[400px] object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-conference-primary/80 via-transparent to-transparent"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -78,6 +58,29 @@ export default function Home() {
                     <p className="text-white/90 text-sm">Hyderabad, India • May 15-16, 2026</p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Key Highlights */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">
+            <div className="flex items-start gap-4 p-6 bg-white rounded-xl border border-conference-border/30 hover:border-conference-accent/30 hover:shadow-lg transition-all">
+              <div className="w-12 h-12 bg-conference-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <FiUsers className="w-6 h-6 text-conference-accent" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-conference-primary mb-1">Global Forum</h4>
+                <p className="text-sm text-conference-text/70">Researchers & Industry</p>
+              </div>
+            </div>
+            
+            <div className="flex items-start gap-4 p-6 bg-white rounded-xl border border-conference-border/30 hover:border-conference-accent/30 hover:shadow-lg transition-all">
+              <div className="w-12 h-12 bg-conference-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <FiFileText className="w-6 h-6 text-conference-accent" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-conference-primary mb-1">Research Focus</h4>
+                <p className="text-sm text-conference-text/70">Robotics, VLSI & AI</p>
               </div>
             </div>
           </div>
@@ -132,7 +135,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-conference-text/80 font-light mb-4">
-                  Submit your papers on emerging and integrated cyber-physical systems & communication technologies
+                  Submit your papers on Robotics, Communication, VLSI, and Artificial Intelligence
                 </p>
                 <Link href="/call-for-papers" className="text-conference-accent hover:text-conference-accent/80 hover:underline font-medium inline-flex items-center">
                   View Call for Papers <FiArrowRight className="ml-1 h-4 w-4" />
@@ -166,7 +169,7 @@ export default function Home() {
             </h2>
             <div className="w-24 h-0.5 mx-auto mb-8 bg-gradient-to-r from-conference-accent to-conference-secondary"></div>
             <p className="text-lg text-conference-text/70 max-w-4xl mx-auto leading-relaxed font-light">
-              Plan your research journey with these critical milestones for <span className="font-medium text-conference-accent">ICEI-CPSCT 2026</span>.
+              Plan your research journey with these critical milestones for <span className="font-medium text-conference-accent">ROCV-AI 2026</span>.
             </p>
           </div>
 
@@ -184,8 +187,14 @@ export default function Home() {
       </section>
 
       {/* Featured Speakers */}
-      <section className="py-20 bg-gradient-to-br from-conference-muted/30 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-gradient-to-br from-conference-muted/30 to-white relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-20 right-20 w-64 h-64 bg-conference-accent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-64 h-64 bg-conference-secondary rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-6 py-3 bg-conference-accent/10 rounded-full border border-conference-accent/20 mb-8">
               <FiUsers className="mr-3 text-conference-accent" />
@@ -205,21 +214,65 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-            {featuredSpeakers.map((speaker, index) => (
-              <div
-                key={index}
-                className="h-full opacity-0 animate-fade-in-up"
-                style={{ animationDelay: `${0.1 * index}s` }}
-              >
-                <SpeakerCard
-                  name={speaker.name}
-                  affiliation={speaker.affiliation}
-                  expertise={speaker.expertise}
-                  badgeText="Keynote"
-                />
+          {/* Centered Speaker Card */}
+          <div className="flex justify-center items-center mt-12 mb-8">
+            <div className="w-full max-w-md">
+              <div className="relative group">
+                {/* Glow effect */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-conference-accent via-conference-secondary to-conference-primary rounded-2xl opacity-20 group-hover:opacity-30 blur-lg transition duration-300"></div>
+                
+                {/* Card */}
+                <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden border border-conference-border/30 p-8 transform transition-all duration-300 hover:scale-105">
+                  {/* Decorative corner */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-conference-accent/10 to-transparent rounded-bl-full"></div>
+                  <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-conference-secondary/10 to-transparent rounded-tr-full"></div>
+                  
+                  <div className="relative z-10 text-center">
+                    {/* Avatar with gradient border */}
+                    <div className="relative inline-block mb-6">
+                      <div className="absolute -inset-2 bg-gradient-to-r from-conference-accent to-conference-secondary rounded-full opacity-20 blur"></div>
+                      <div className="relative w-32 h-32 mx-auto bg-gradient-to-br from-conference-accent to-conference-secondary rounded-full flex items-center justify-center shadow-xl">
+                        <span className="text-4xl font-bold text-white">TB</span>
+                      </div>
+                      {/* Keynote badge */}
+                      <div className="absolute -top-2 -right-2 bg-gradient-to-r from-conference-accent to-conference-secondary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                        Keynote
+                      </div>
+                    </div>
+
+                    {/* Name */}
+                    <h3 className="text-2xl font-bold text-conference-primary mb-3">
+                      To Be Announced
+                    </h3>
+
+                    {/* Divider */}
+                    <div className="w-16 h-0.5 mx-auto mb-4 bg-gradient-to-r from-conference-accent to-conference-secondary rounded-full"></div>
+
+                    {/* Affiliation */}
+                    <div className="flex items-center justify-center gap-2 mb-4 text-conference-text/70">
+                      <FiUsers className="w-4 h-4 text-conference-accent" />
+                      <p className="text-sm font-medium">Details will be updated soon</p>
+                    </div>
+
+                    {/* Expertise */}
+                    <div className="bg-gradient-to-r from-conference-accent/5 via-conference-secondary/5 to-conference-primary/5 rounded-xl p-4 mb-4">
+                      <p className="text-xs font-semibold text-conference-accent uppercase tracking-wider mb-2">
+                        Expertise
+                      </p>
+                      <p className="text-sm text-conference-text/80 leading-relaxed">
+                        Stay tuned for exciting keynote speakers
+                      </p>
+                    </div>
+
+                    {/* Coming soon indicator */}
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-conference-muted/50 rounded-full">
+                      <div className="w-2 h-2 bg-conference-accent rounded-full animate-pulse"></div>
+                      <span className="text-xs font-medium text-conference-text/70">Announcement Coming Soon</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-            ))}
+            </div>
           </div>
 
           <div className="text-center mt-16">

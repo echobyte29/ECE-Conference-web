@@ -5,8 +5,8 @@ import { FiMapPin, FiInfo, FiNavigation2 } from "react-icons/fi";
 import { CONFERENCE_VENUE } from "@/lib/constants";
 
 export const metadata = {
-  title: "Venue | ICEI-CPSCT 2026",
-  description: "Venue information for ICEI-CPSCT 2026 at KLEF Bowrampet Campus, Hyderabad",
+  title: "Venue | ROCV-AI 2026",
+  description: "Venue information for ROCV-AI 2026 at KLEF Bowrampet Campus, Hyderabad",
 };
 
 export default function VenuePage() {

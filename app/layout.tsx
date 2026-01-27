@@ -7,9 +7,9 @@ import Footer from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ICEI-CPSCT 2026 - Emerging and Integrated Cyber-Physical Systems & Communication Technologies",
+  title: "ROCV-AI 2026 - Robotics, Communication, VLSI, and Artificial Intelligence",
   description:
-    "International Conference on Emerging and Integrated Cyber-Physical Systems & Communication Technologies (ICEI-CPSCT 2026) - May 15-16, 2026 at KLEF Bowrampet Campus, Hyderabad",
+    "International Conference on Emerging Trends in Robotics, Communication, VLSI, and Artificial Intelligence (ROCV-AI 2026) - May 15-16, 2026 at KLEF Bowrampet Campus, Hyderabad",
 };
 
 export default function RootLayout({

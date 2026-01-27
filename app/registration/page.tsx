@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 import { FiCreditCard, FiAlertCircle, FiCheckCircle, FiHelpCircle } from "react-icons/fi";
 
 export const metadata = {
-  title: "Registration | ICEI-CPSCT 2026",
-  description: "Registration information and fees for ICEI-CPSCT 2026 conference",
+  title: "Registration | ROCV-AI 2026",
+  description: "Registration information and fees for ROCV-AI 2026 conference",
 };
 
 export default function RegistrationPage() {
@@ -133,7 +133,7 @@ export default function RegistrationPage() {
                 </li>
                 <li className="flex items-start">
                   <FiCheckCircle className="text-conference-primary mt-1 mr-3 flex-shrink-0" />
-                  <span>Selected papers may be recommended for IRJMT journal submission</span>
+                  <span>Selected papers may be recommended for submission to Scopus Indexed Journal "International Research Journal of Multidisciplinary Technovation (IRJMT)", Journal of Applied Sciences and Multidisciplinary Engineering (non-scopus indexed) included in a special collection if accepted</span>
                 </li>
               </ul>
             </CardContent>
@@ -168,24 +168,18 @@ export default function RegistrationPage() {
                   <div className="w-full">
                     <h3 className="font-medium text-lg mb-4">Bank Transfer Details</h3>
                     <div className="bg-gray-50 p-4 rounded-lg space-y-2">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div>
-                          <p className="font-semibold">Account Name:</p>
-                          <p className="text-gray-700">KoneruLakshmaiah Education Foundation Bowrampet</p>
-                        </div>
-                        <div>
-                          <p className="font-semibold">Account Number:</p>
-                          <p className="text-gray-700 font-mono">99914455566677</p>
-                        </div>
-                        <div>
-                          <p className="font-semibold">Bank Name:</p>
-                          <p className="text-gray-700">HDFC Bank</p>
-                        </div>
-                        <div>
-                          <p className="font-semibold">IFSC Code:</p>
-                          <p className="text-gray-700 font-mono">HDFC0000109</p>
-                        </div>
-                      </div>
+                    <p className="text-gray-700 mb-2">
+                      <strong>Account Name:</strong> Koneru Lakshmaiah Education Foundation, Bowrampet
+                    </p>
+                    <p className="text-gray-700 font-mono mb-2">
+                      <strong>Account Number:</strong> 99914455566677
+                    </p>
+                    <p className="text-gray-700 mb-2">
+                      <strong>Bank Name:</strong> HDFC Bank
+                    </p>
+                    <p className="text-gray-700 font-mono">
+                      <strong>IFSC Code:</strong> HDFC0000109
+                    </p>
                     </div>
                   </div>
                 </div>
@@ -198,7 +192,7 @@ export default function RegistrationPage() {
         <div className="text-center mb-12">
           <a href="https://forms.gle/77d6Y8t9wzjrS4jc7" target="_blank" rel="noopener noreferrer">
             <Button className="bg-conference-primary hover:bg-conference-primary/90 text-white py-6 px-8 text-lg">
-              Register Now for ICEI-CPSCT 2026
+              Register Now for ROCV-AI 2026
             </Button>
           </a>
           <p className="text-sm text-gray-500 mt-2">
@@ -280,7 +274,7 @@ export default function RegistrationPage() {
                     Will papers be published?
                   </h3>
                   <p className="mt-2 text-gray-700 ml-7">
-                    All papers will be published in conference proceedings with ISBN. Selected papers will be considered for publication in Scopus indexed journal and may be recommended for IRJMT journal.
+                    All papers will be published in conference proceedings with ISBN. All selected, registered, and presented papers will be considered for publication in Scopus indexed journal with APC (excluding Registration Fee), if applicable, must be paid by authors. Selected papers may be recommended for submission to Scopus Indexed Journal "International Research Journal of Multidisciplinary Technovation (IRJMT)", Journal of Applied Sciences and Multidisciplinary Engineering (non-scopus indexed) included in a special collection if accepted.
                   </p>
                 </div>
               </div>

@@ -6,8 +6,8 @@ import { IMPORTANT_DATES } from "@/lib/constants";
 import { FiCalendar, FiAlertCircle } from "react-icons/fi";
 
 export const metadata = {
-  title: "Important Dates | ICEI-CPSCT 2026",
-  description: "Important dates and deadlines for ICEI-CPSCT 2026 conference",
+  title: "Important Dates | ROCV-AI 2026",
+  description: "Important dates and deadlines for ROCV-AI 2026 conference",
 };
 
 export default function ImportantDatesPage() {
@@ -32,7 +32,7 @@ export default function ImportantDatesPage() {
             
             <p className="text-lg text-conference-text/70 max-w-4xl mx-auto leading-relaxed font-light">
               Plan your research journey with these <span className="text-conference-accent font-medium">critical milestones</span> for 
-              ICEI-CPSCT 2026. Please ensure you meet all deadlines to secure your participation.
+              ROCV-AI 2026. Please ensure you meet all deadlines to secure your participation.
             </p>
           </div>
 

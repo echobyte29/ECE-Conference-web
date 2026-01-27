@@ -1,5 +1,5 @@
-export const CONFERENCE_NAME = "International Conference on Emerging and Integrated Cyber-Physical Systems & Communication Technologies";
-export const CONFERENCE_SHORT_NAME = "ICEI-CPSCT 2026";
+export const CONFERENCE_NAME = "International Conference on Emerging Trends in Robotics, Communication, VLSI, and Artificial Intelligence";
+export const CONFERENCE_SHORT_NAME = "ROCV-AI 2026";
 export const CONFERENCE_DATE = "May 15-16, 2026";
 export const CONFERENCE_VENUE = "KLEF Bowrampet Campus, Hyderabad, India";
 export const CONFERENCE_EMAIL = "dr.kirankumar@klh.edu.in";
@@ -96,94 +96,9 @@ export const TRACKS = [
 
 export const KEYNOTE_SPEAKERS = [
   {
-    name: "Dr. Sesham Srinu",
-    affiliation: "Senior Lecturer, University of Namibia",
-    expertise: "Cyber-Physical Systems & IoT Security"
-  },
-  {
-    name: "Prof. Kandasamy Prabakar",
-    affiliation: "Professor at Pusan National University, Republic of Korea",
-    expertise: "Smart Grid Technologies & Power Systems"
-  },
-  {
-    name: "Prof. Hee-Je Kim",
-    affiliation: "Professor at Pusan National University, Republic of Korea",
-    expertise: "Advanced Communication Systems"
-  },
-  {
-    name: "Dr. Challa Sesha Sai Pavan Kumar",
-    affiliation: "Senior Researcher, NIST, USA",
-    expertise: "AI/ML for Cyber-Physical Systems"
-  },
-  {
-    name: "Dr. Naveen Halappa",
-    affiliation: "Postdoctoral Fellow, KAUST, Saudi Arabia",
-    expertise: "Edge Computing & Distributed Systems"
-  },
-  {
-    name: "Dr. Shyam Akashe",
-    affiliation: "Dean (International Cooperation & Projects) and Professor, ITM University",
-    expertise: "VLSI Design & Embedded Systems"
-  },
-  {
-    name: "Dr. Murali Mohan Cheepu",
-    affiliation: "Research Manager, Starwelds Inc, Busan, Republic of Korea",
-    expertise: "Industrial IoT & Manufacturing Systems"
-  },
-  {
-    name: "Dr. Reddi Mohan Naidu Kalla",
-    affiliation: "Associate Professor, Yeungnam University, Republic of Korea",
-    expertise: "Wireless Communication Technologies"
-  },
-  {
-    name: "Dr. Mannin Himanshu",
-    affiliation: "E-Mobility Senior Engineer, RSTER, Zaventem, Belgium",
-    expertise: "Electric Vehicle Systems & Smart Mobility"
-  },
-  {
-    name: "Dr. Prasad Naik Ramavath",
-    affiliation: "Assistant Professor, National Institute of Technology, Rourkela, India",
-    expertise: "Signal Processing & Machine Learning"
-  },
-  {
-    name: "Mr. Lava K Vandrangi",
-    affiliation: "Senior Engineer, Pepco Holdings, USA",
-    expertise: "Power Grid Modernization & Smart Infrastructure"
-  },
-  {
-    name: "Dr. Mohd Amiruddin Bin ABD Rahman",
-    affiliation: "Professor, University of Putra Malaysia, Malaysia",
-    expertise: "Renewable Energy & Sustainable Systems"
-  },
-  {
-    name: "Dr. Ujval Mutyala",
-    affiliation: "Senior Research Fellow, Eastern Illinois University, Charleston, USA",
-    expertise: "Biomedical Cyber-Physical Systems"
-  },
-  {
-    name: "Dr. Srihansha Chollangi",
-    affiliation: "Senior Research Fellow, Gannon University, USA",
-    expertise: "Advanced Signal Processing & AI"
-  },
-  {
-    name: "Prof. S.V.S. Nageswara Rao",
-    affiliation: "Professor, University of Hyderabad",
-    expertise: "Communications & Network Systems"
-  },
-  {
-    name: "Prof. S.L. Sabat",
-    affiliation: "Professor, University of Hyderabad",
-    expertise: "Digital Signal Processing & Control Systems"
-  },
-  {
-    name: "Dr. S.L.D Varma",
-    affiliation: "Assistant Professor, University of Hyderabad",
-    expertise: "Digital Communications & Signal Processing"
-  },
-  {
-    name: "Dr. P. Rangababu",
-    affiliation: "Associate Professor, IIITDM, Kurnool",
-    expertise: "VLSI Design & Embedded Systems"
+    name: "To Be Announced",
+    affiliation: "Details will be updated soon",
+    expertise: "Stay tuned for exciting keynote speakers"
   },
 ];
 
@@ -251,7 +166,7 @@ export const COMMITTEES = {
     { name: "Prof. S.L. Sabat", affiliation: "Professor, University of Hyderabad" },
     { name: "Dr. S.L.D Varma", affiliation: "Assistant Professor, University of Hyderabad" },
     { name: "Dr. P. Rangababu", affiliation: "Associate Professor, IIITDM, Kurnool" },
-    { name: "Mr. Venkat Reddy", affiliation: "Design Engineer" },
+    { name: "Mr. Venkat Reddy", affiliation: "Systems Engineer, Signion Systems" },
     { name: "Mr. Anil Kumar", affiliation: "Physical Design Engineer, Infosys" },
     { name: "Mr. Shravan Kumar", affiliation: "Design Engineer, HCL" },
     { name: "Dr. Rena Rakesh", affiliation: "Senior Analog & RFIC Design Engineer, Sasken Tech. Ltd." },
@@ -282,7 +197,7 @@ export const DEPARTMENT_INFO = {
 };
 
 export const CONFERENCE_INFO = {
-  name: "International Conference on Emerging and Integrated Cyber-Physical Systems & Communication Technologies (ICEI-CPSCT 2026)",
-  desc: "ICEI-CPSCT 2026 (International Conference on Emerging and Integrated Cyber-Physical Systems & Communication Technologies) aims to serve as a premier global forum for researchers, academicians, and industry professionals. The conference focuses on emerging and integrated cyber-physical systems that seamlessly combine hardware, software, communication technologies, and intelligent algorithms. Key thrust areas include secure devices, embedded and low-power hardware architectures, and next-generation communication networks. ICEI-CPSCT 2026 emphasizes advancements in Artificial Intelligence, Machine Learning, and Deep Learning for intelligent, connected, and real-time cyber-physical applications. The conference also highlights innovations in algorithms for sensing, control, signal processing, networking, and system optimization. It encourages interdisciplinary research addressing challenges related to security, reliability, scalability, and interoperability in cyber-physical and communication systems. Industry-focused sessions and expert talks aim to bridge the gap between theoretical research and real-world deployment. ICEI-CPSCT 2026 promotes collaboration, knowledge exchange, and impactful research in emerging cyber-physical systems and communication technologies.",
+  name: "International Conference on Emerging Trends in Robotics, Communication, VLSI, and Artificial Intelligence (ROCV-AI 2026)",
+  desc: "ROCV-AI 2026 (International Conference on Emerging Trends in Robotics, Communication, VLSI, and Artificial Intelligence) aims to serve as a premier global forum for researchers, academicians, and industry professionals. The conference focuses on emerging and integrated intelligent systems that seamlessly combine robotics, electronics, VLSI hardware, embedded systems, communication technologies, and advanced AI algorithms. Key thrust areas include AI-driven robotics, on-chip intelligence and VLSI architectures, secure and low-power electronic systems, and next-generation communication technologies. ROCV-AI 2026 emphasizes advancements in Artificial Intelligence, Machine Learning, and Deep Learning for intelligent, connected, and real-time robotic and cyber-physical applications. The conference also highlights innovations in algorithms for sensing, perception, control, signal processing, communication, networking, and system optimization, with a strong focus on hardware-aware AI, edge intelligence, and communication-efficient robotic systems. It encourages interdisciplinary research addressing challenges related to security, reliability, scalability, energy efficiency, and interoperability in intelligent electronic and communication systems. Industry-focused sessions and expert keynote talks aim to bridge the gap between theoretical research and real-world deployment. ROCV-AI 2026 promotes collaboration, knowledge exchange, and impactful research in AI-powered robotics, VLSI systems, electronics, and communication technologies.",
   organizer: "Department of Electronics and Communication Engineering, KLEF Bowrampet Campus, Hyderabad",
 };
