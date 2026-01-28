@@ -64,21 +64,23 @@ export default function Home() {
 
           {/* Key Highlights */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">
-            <div className="flex items-start gap-4 p-6 bg-white rounded-xl border border-conference-border/30 hover:border-conference-accent/30 hover:shadow-lg transition-all">
-              <div className="w-12 h-12 bg-conference-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                <FiUsers className="w-6 h-6 text-conference-accent" />
+            <div className="relative overflow-hidden flex items-start gap-4 p-6 bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-xl border border-blue-200 hover:border-blue-400 hover:shadow-xl transition-all group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
+              <div className="relative w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
+                <FiUsers className="w-6 h-6 text-white" />
               </div>
-              <div>
+              <div className="relative">
                 <h4 className="font-semibold text-conference-primary mb-1">Global Forum</h4>
                 <p className="text-sm text-conference-text/70">Researchers & Industry</p>
               </div>
             </div>
             
-            <div className="flex items-start gap-4 p-6 bg-white rounded-xl border border-conference-border/30 hover:border-conference-accent/30 hover:shadow-lg transition-all">
-              <div className="w-12 h-12 bg-conference-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                <FiFileText className="w-6 h-6 text-conference-accent" />
+            <div className="relative overflow-hidden flex items-start gap-4 p-6 bg-gradient-to-br from-amber-50 via-white to-orange-50 rounded-xl border border-orange-200 hover:border-orange-400 hover:shadow-xl transition-all group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-amber-400/20 to-orange-400/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
+              <div className="relative w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
+                <FiFileText className="w-6 h-6 text-white" />
               </div>
-              <div>
+              <div className="relative">
                 <h4 className="font-semibold text-conference-primary mb-1">Research Focus</h4>
                 <p className="text-sm text-conference-text/70">Robotics, VLSI & AI</p>
               </div>
@@ -86,58 +88,61 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-            <Card className="transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border-conference-border bg-white">
-              <CardHeader className="pb-4">
+            <Card className="relative overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border-0 bg-gradient-to-br from-emerald-50 via-white to-teal-50">
+              <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-emerald-400/20 to-teal-400/20 rounded-full blur-3xl"></div>
+              <CardHeader className="pb-4 relative">
                 <div className="flex items-center space-x-4">
-                  <div className="p-3 rounded-xl bg-conference-accent/10 border border-conference-accent/20">
-                    <FiCalendar className="h-6 w-6 text-conference-accent" />
+                  <div className="p-3 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 shadow-lg">
+                    <FiCalendar className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle className="text-conference-primary font-medium">Conference Dates</CardTitle>
                 </div>
               </CardHeader>
-              <CardContent>
+              <CardContent className="relative">
                 <p className="text-conference-text/80 font-light mb-4">
                   May 15-16, 2026
                 </p>
-                <Link href="/important-dates" className="text-conference-accent hover:text-conference-accent/80 hover:underline font-medium inline-flex items-center">
+                <Link href="/important-dates" className="text-emerald-600 hover:text-emerald-700 hover:underline font-medium inline-flex items-center">
                   View Important Dates <FiArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               </CardContent>
             </Card>
 
-            <Card className="transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border-conference-border bg-white">
-              <CardHeader className="pb-4">
+            <Card className="relative overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border-0 bg-gradient-to-br from-rose-50 via-white to-pink-50">
+              <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-rose-400/20 to-pink-400/20 rounded-full blur-3xl"></div>
+              <CardHeader className="pb-4 relative">
                 <div className="flex items-center space-x-4">
-                  <div className="p-3 rounded-xl bg-conference-accent/10 border border-conference-accent/20">
-                    <FiMapPin className="h-6 w-6 text-conference-accent" />
+                  <div className="p-3 rounded-xl bg-gradient-to-br from-rose-500 to-pink-600 shadow-lg">
+                    <FiMapPin className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle className="text-conference-primary font-medium">Venue</CardTitle>
                 </div>
               </CardHeader>
-              <CardContent>
+              <CardContent className="relative">
                 <p className="text-conference-text/80 font-light mb-4">
                   KLEF Bowrampet Campus, Hyderabad
                 </p>
-                <Link href="/venue" className="text-conference-accent hover:text-conference-accent/80 hover:underline font-medium inline-flex items-center">
+                <Link href="/venue" className="text-rose-600 hover:text-rose-700 hover:underline font-medium inline-flex items-center">
                   Venue Details <FiArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               </CardContent>
             </Card>
 
-            <Card className="transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border-conference-border bg-white">
-              <CardHeader className="pb-4">
+            <Card className="relative overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border-0 bg-gradient-to-br from-indigo-50 via-white to-blue-50">
+              <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-indigo-400/20 to-blue-400/20 rounded-full blur-3xl"></div>
+              <CardHeader className="pb-4 relative">
                 <div className="flex items-center space-x-4">
-                  <div className="p-3 rounded-xl bg-conference-accent/10 border border-conference-accent/20">
-                    <FiFileText className="h-6 w-6 text-conference-accent" />
+                  <div className="p-3 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-600 shadow-lg">
+                    <FiFileText className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle className="text-conference-primary font-medium">Submissions</CardTitle>
                 </div>
               </CardHeader>
-              <CardContent>
+              <CardContent className="relative">
                 <p className="text-conference-text/80 font-light mb-4">
                   Submit your papers on Robotics, Communication, VLSI, and Artificial Intelligence
                 </p>
-                <Link href="/call-for-papers" className="text-conference-accent hover:text-conference-accent/80 hover:underline font-medium inline-flex items-center">
+                <Link href="/call-for-papers" className="text-indigo-600 hover:text-indigo-700 hover:underline font-medium inline-flex items-center">
                   View Call for Papers <FiArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               </CardContent>
@@ -165,114 +170,114 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl border-0">
               <div className="relative h-48">
                 <img 
                   src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop"
                   alt="Artificial Intelligence"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-700/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold">AI & Machine Learning</h3>
+                  <h3 className="text-xl font-bold drop-shadow-lg">AI & Machine Learning</h3>
                 </div>
               </div>
-              <CardContent className="p-6">
+              <CardContent className="p-6 bg-gradient-to-br from-purple-50 to-white">
                 <p className="text-gray-700 text-sm">
                   Deep Learning, Edge AI, Explainable AI, and AI-driven systems for real-world applications
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl border-0">
               <div className="relative h-48">
                 <img 
                   src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop"
                   alt="Robotics"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-orange-900/90 via-orange-700/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold">Robotics & IoT</h3>
+                  <h3 className="text-xl font-bold drop-shadow-lg">Robotics & IoT</h3>
                 </div>
               </div>
-              <CardContent className="p-6">
+              <CardContent className="p-6 bg-gradient-to-br from-orange-50 to-white">
                 <p className="text-gray-700 text-sm">
                   AI-driven robotics, Industrial IoT, Smart systems, and autonomous technologies
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl border-0">
               <div className="relative h-48">
                 <img 
                   src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop"
                   alt="VLSI and Hardware"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-700/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold">VLSI & Hardware</h3>
+                  <h3 className="text-xl font-bold drop-shadow-lg">VLSI & Hardware</h3>
                 </div>
               </div>
-              <CardContent className="p-6">
+              <CardContent className="p-6 bg-gradient-to-br from-blue-50 to-white">
                 <p className="text-gray-700 text-sm">
                   FPGA design, Hardware security, On-chip intelligence, and secure IC design
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl border-0">
               <div className="relative h-48">
                 <img 
                   src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&auto=format&fit=crop"
                   alt="Communication Systems"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-teal-900/90 via-teal-700/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold">5G/6G Networks</h3>
+                  <h3 className="text-xl font-bold drop-shadow-lg">5G/6G Networks</h3>
                 </div>
               </div>
-              <CardContent className="p-6">
+              <CardContent className="p-6 bg-gradient-to-br from-teal-50 to-white">
                 <p className="text-gray-700 text-sm">
                   Next-gen wireless, Secure communication, and advanced networking protocols
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl border-0">
               <div className="relative h-48">
                 <img 
                   src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800&auto=format&fit=crop"
                   alt="Cryptography"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-red-900/90 via-red-700/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold">Cryptography</h3>
+                  <h3 className="text-xl font-bold drop-shadow-lg">Cryptography</h3>
                 </div>
               </div>
-              <CardContent className="p-6">
+              <CardContent className="p-6 bg-gradient-to-br from-red-50 to-white">
                 <p className="text-gray-700 text-sm">
                   Lightweight cryptography, Post-quantum security, and blockchain technologies
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
+            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl border-0">
               <div className="relative h-48">
                 <img 
                   src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop"
                   alt="Cyber-Physical Systems"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-green-900/90 via-green-700/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold">Embedded Systems</h3>
+                  <h3 className="text-xl font-bold drop-shadow-lg">Embedded Systems</h3>
                 </div>
               </div>
-              <CardContent className="p-6">
+              <CardContent className="p-6 bg-gradient-to-br from-green-50 to-white">
                 <p className="text-gray-700 text-sm">
                   Real-time systems, Cyber-physical applications, and edge computing solutions
                 </p>
@@ -451,20 +456,22 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
-              <CardContent className="p-8 text-center">
-                <div className="inline-flex items-center justify-center p-4 rounded-full bg-conference-primary/10 mb-4">
-                  <FiMail className="h-8 w-8 text-conference-primary" />
+            <Card className="relative overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl border-0 bg-gradient-to-br from-cyan-50 via-white to-blue-50">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-400/20 to-blue-400/20 rounded-full blur-3xl"></div>
+              <CardContent className="p-8 text-center relative">
+                <div className="inline-flex items-center justify-center p-4 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 shadow-lg mb-4">
+                  <FiMail className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-xl mb-2">Email</h3>
                 <p className="text-gray-600">will be announced soon</p>
               </CardContent>
             </Card>
 
-            <Card className="transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
-              <CardContent className="p-8 text-center">
-                <div className="inline-flex items-center justify-center p-4 rounded-full bg-conference-accent/10 mb-4">
-                  <FiMapPin className="h-8 w-8 text-conference-accent" />
+            <Card className="relative overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl border-0 bg-gradient-to-br from-violet-50 via-white to-purple-50">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-violet-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
+              <CardContent className="p-8 text-center relative">
+                <div className="inline-flex items-center justify-center p-4 rounded-full bg-gradient-to-br from-violet-500 to-purple-600 shadow-lg mb-4">
+                  <FiMapPin className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-xl mb-2">Address</h3>
                 <p className="text-gray-600">

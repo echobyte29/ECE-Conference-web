@@ -33,28 +33,46 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 pt-4 animate-float">
-      <div className={`max-w-7xl mx-auto transition-all duration-300 ${
-        scrolled 
-          ? 'bg-white/95 shadow-xl border border-conference-border/50' 
-          : 'bg-white/90 shadow-lg border border-conference-border/30'
-      } backdrop-blur-md rounded-[2rem]`}>
-        <div className="px-4 sm:px-6">
-          <div className="flex justify-between h-16">
-            {/* Logo */}
-            <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="flex items-center group">
-                <div className="relative">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-conference-accent to-conference-secondary rounded-lg opacity-0 group-hover:opacity-20 blur transition duration-300"></div>
-                  <span className="relative font-light text-xl md:text-2xl text-conference-primary tracking-tight">
-                    ROCV-AI <span className="font-bold bg-gradient-to-r from-conference-accent to-conference-secondary bg-clip-text text-transparent">2026</span>
-                  </span>
-                </div>
-              </Link>
-            </div>
+    <>
+      {/* KL University Logos - Positioned outside navbar */}
+      <div className="fixed top-2 left-4 z-50 hidden lg:block">
+        <img 
+          src="/KLH%20img.jpeg" 
+          alt="KL University" 
+          className="h-16 w-auto drop-shadow-2xl bg-white rounded-lg p-1"
+        />
+      </div>
+      
+      <div className="fixed top-2 right-4 z-50 hidden lg:block">
+        <img 
+          src="/KL%20img.jpeg" 
+          alt="KL University Hyderabad" 
+          className="h-16 w-auto drop-shadow-2xl bg-white rounded-lg p-1"
+        />
+      </div>
+      
+      <nav className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 pt-4 animate-float">
+        <div className={`max-w-7xl mx-auto transition-all duration-300 ${
+          scrolled 
+            ? 'bg-white/95 shadow-xl border border-conference-border/50' 
+            : 'bg-white/90 shadow-lg border border-conference-border/30'
+        } backdrop-blur-md rounded-[2rem]`}>
+          <div className="px-4 sm:px-6">
+            <div className="flex justify-between h-14">
+              {/* Logo */}
+              <div className="flex-shrink-0 flex items-center">
+                <Link href="/" className="flex items-center group">
+                  <div className="relative">
+                    <div className="absolute -inset-1 bg-gradient-to-r from-conference-accent to-conference-secondary rounded-lg opacity-0 group-hover:opacity-20 blur transition duration-300"></div>
+                    <span className="relative font-light text-lg md:text-xl text-conference-primary tracking-tight">
+                      ROCV-AI <span className="font-bold bg-gradient-to-r from-conference-accent to-conference-secondary bg-clip-text text-transparent">2026</span>
+                    </span>
+                  </div>
+                </Link>
+              </div>
 
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex md:items-center md:space-x-1">
+              {/* Desktop Navigation */}
+              <div className="hidden md:flex md:items-center md:space-x-1">
               {menuItems.map((item) => (
                 <Link
                   key={item.title}
@@ -68,19 +86,19 @@ const Navbar = () => {
               ))}
             </div>
 
-            {/* Mobile menu button */}
-            <div className="md:hidden flex items-center">
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={toggleMenu}
-                className="inline-flex items-center justify-center p-2 rounded-xl text-conference-text/80 hover:text-conference-accent hover:bg-gradient-to-r hover:from-conference-accent/10 hover:to-conference-secondary/10 focus:outline-none transition-all duration-300"
-              >
-                {isOpen ? <FiX className="h-6 w-6" /> : <FiMenu className="h-6 w-6" />}
-              </Button>
+              {/* Mobile menu button */}
+              <div className="md:hidden flex items-center">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={toggleMenu}
+                  className="inline-flex items-center justify-center p-2 rounded-xl text-conference-text/80 hover:text-conference-accent hover:bg-gradient-to-r hover:from-conference-accent/10 hover:to-conference-secondary/10 focus:outline-none transition-all duration-300"
+                >
+                  {isOpen ? <FiX className="h-5 w-5" /> : <FiMenu className="h-5 w-5" />}
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
@@ -101,6 +119,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
+    </nav>
 
       {/* CSS for floating animation */}
       <style jsx>{`
@@ -117,7 +136,7 @@ const Navbar = () => {
           animation: float 3s ease-in-out infinite;
         }
       `}</style>
-    </nav>
+    </>
   );
 };
 
