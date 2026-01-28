@@ -51,8 +51,8 @@ const Navbar = () => {
         />
       </div>
       
-      <nav className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 pt-4 animate-float">
-        <div className={`max-w-7xl mx-auto transition-all duration-300 ${
+      <nav className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-24 pt-4 animate-float">
+        <div className={`max-w-6xl mx-auto transition-all duration-300 ${
           scrolled 
             ? 'bg-white/95 shadow-xl border border-conference-border/50' 
             : 'bg-white/90 shadow-lg border border-conference-border/30'
