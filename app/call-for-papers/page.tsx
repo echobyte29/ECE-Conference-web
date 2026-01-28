@@ -19,14 +19,23 @@ export default function CallForPapersPage() {
 
       {/* Introduction */}
       <section className="mb-12">
-        <Card>
-          <CardContent className="p-6">
-            <div className="flex items-center mb-4">
-              <div className="p-2 mr-3 rounded-full bg-conference-primary/10">
-                <FiFileText className="h-6 w-6 text-conference-primary" />
-              </div>
-              <h2 className="text-xl font-semibold text-conference-primary">Introduction</h2>
+        <Card className="overflow-hidden">
+          <div className="relative h-64 w-full">
+            <img 
+              src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&auto=format&fit=crop"
+              alt="Research and Innovation"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <h2 className="text-2xl font-bold mb-2 flex items-center">
+                <FiFileText className="h-6 w-6 mr-3" />
+                Submit Your Research
+              </h2>
+              <p className="text-white/90">Join us in advancing the frontiers of technology and innovation</p>
             </div>
+          </div>
+          <CardContent className="p-6">
             <p className="text-gray-700 mb-4">
               Authors are invited to submit original and unpublished research papers with an innovative idea on
               topics within the broad areas of Robotics, Communication, VLSI, and Artificial Intelligence, 
@@ -99,30 +108,41 @@ export default function CallForPapersPage() {
       {/* Submission Process */}
       <section className="mb-12">
         <h2 className="section-subtitle mb-6">Submission Process</h2>
-        <Card>
-          <CardContent className="p-6">
-            <p className="text-gray-700 mb-4">
-              All papers must be submitted electronically using the prescribed conference template.
-              Authors are requested to follow these steps:
-            </p>
-            <ol className="list-decimal pl-5 space-y-2 text-gray-700">
-              <li>Prepare your paper according to the Conference Template.</li>
-              <li>Ensure your paper addresses topics within the conference scope.</li>
-              <li>Convert your paper to PDF format.</li>
-              <li>Submit your paper through the designated submission system.</li>
-              <li>You will receive confirmation after successful submission.</li>
-              <li>Track the status of your submission and review process.</li>
-            </ol>
-            <div className="mt-6 p-4 bg-conference-primary/5 rounded-md">
-              <p className="font-medium text-conference-primary">Who Can Attend</p>
-              <p className="text-gray-700">
-                Participation in this conference is open to faculty members, research scholars, 
-                post-graduate and under-graduate students from academics, research institutes/industry, 
-                and working professionals.
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card>
+            <CardContent className="p-6">
+              <p className="text-gray-700 mb-4">
+                All papers must be submitted electronically using the prescribed conference template.
+                Authors are requested to follow these steps:
               </p>
-            </div>
-          </CardContent>
-        </Card>
+              <ol className="list-decimal pl-5 space-y-2 text-gray-700">
+                <li>Prepare your paper according to the Conference Template.</li>
+                <li>Ensure your paper addresses topics within the conference scope.</li>
+                <li>Convert your paper to PDF format.</li>
+                <li>Submit your paper through the designated submission system.</li>
+                <li>You will receive confirmation after successful submission.</li>
+                <li>Track the status of your submission and review process.</li>
+              </ol>
+              <div className="mt-6 p-4 bg-conference-primary/5 rounded-md">
+                <p className="font-medium text-conference-primary">Who Can Attend</p>
+                <p className="text-gray-700">
+                  Participation in this conference is open to faculty members, research scholars, 
+                  post-graduate and under-graduate students from academics, research institutes/industry, 
+                  and working professionals.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="overflow-hidden">
+            <CardContent className="p-0">
+              <img 
+                src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&auto=format&fit=crop"
+                alt="Research and Writing"
+                className="w-full h-full object-cover"
+              />
+            </CardContent>
+          </Card>
+        </div>
       </section>
 
       {/* Important Dates (Summary) */}

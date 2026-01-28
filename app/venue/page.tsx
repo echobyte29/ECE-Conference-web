@@ -50,12 +50,16 @@ export default function VenuePage() {
                 </p>
               </div>
 
-              {/* Placeholder for map - in a real implementation this would be replaced with an actual iframe or map component */}
-              <div className="relative w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center mb-6">
-                <div className="text-gray-500 flex flex-col items-center">
-                  <FiMapPin className="h-10 w-10 mb-2" />
-                  <p>Interactive map would be displayed here</p>
-                  <p className="text-sm">(Google Maps integration)</p>
+              {/* Campus Image */}
+              <div className="relative w-full h-80 rounded-lg overflow-hidden mb-6">
+                <img 
+                  src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=1200&auto=format&fit=crop"
+                  alt="Modern University Campus"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <p className="text-sm font-medium">KLEF Bowrampet Campus</p>
                 </div>
               </div>
 
@@ -90,20 +94,31 @@ export default function VenuePage() {
         <section className="mb-12">
           <h2 className="section-subtitle mb-6">About Hyderabad</h2>
           <Card>
-            <CardContent className="p-6">
-              <p className="text-gray-700 mb-4">
-                Hyderabad, the capital of Telangana, is a major center for the technology industry in India.
-                The city is known for its rich history, delicious cuisine, and warm hospitality.
-              </p>
-              <p className="text-gray-700 mb-4">
-                The city is famous for its monuments like Charminar, Golconda Fort, and the Qutb Shahi Tombs.
-                It is also known as the "City of Pearls" due to its historical association with the pearl trade.
-              </p>
-              <p className="text-gray-700">
-                Hyderabad has pleasant weather in May, with average temperatures ranging from 25°C to 35°C.
-                The conference is scheduled during a comfortable time to visit the city and participate in 
-                academic activities.
-              </p>
+            <CardContent className="p-0">
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="relative h-64 md:h-auto">
+                  <img 
+                    src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&auto=format&fit=crop"
+                    alt="Hyderabad City"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <p className="text-gray-700 mb-4">
+                    Hyderabad, the capital of Telangana, is a major center for the technology industry in India.
+                    The city is known for its rich history, delicious cuisine, and warm hospitality.
+                  </p>
+                  <p className="text-gray-700 mb-4">
+                    The city is famous for its monuments like Charminar, Golconda Fort, and the Qutb Shahi Tombs.
+                    It is also known as the "City of Pearls" due to its historical association with the pearl trade.
+                  </p>
+                  <p className="text-gray-700">
+                    Hyderabad has pleasant weather in May, with average temperatures ranging from 25°C to 35°C.
+                    The conference is scheduled during a comfortable time to visit the city and participate in 
+                    academic activities.
+                  </p>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </section>
@@ -111,36 +126,47 @@ export default function VenuePage() {
         {/* Facilities */}
         <section>
           <h2 className="section-subtitle mb-6">Venue Facilities</h2>
-          <Card>
-            <CardContent className="p-6">
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-conference-primary mr-2">•</span>
-                  <span><strong>State-of-the-art Auditorium:</strong> With seating capacity for 300+ attendees</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-conference-primary mr-2">•</span>
-                  <span><strong>Seminar Halls:</strong> Multiple fully-equipped seminar halls for parallel sessions</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-conference-primary mr-2">•</span>
-                  <span><strong>High-speed Wi-Fi:</strong> Throughout the venue</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-conference-primary mr-2">•</span>
-                  <span><strong>Exhibition Area:</strong> For sponsors and industry partners</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-conference-primary mr-2">•</span>
-                  <span><strong>Dining Facilities:</strong> For breakfast, lunch, and refreshments</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-conference-primary mr-2">•</span>
-                  <span><strong>Accessibility:</strong> The venue is fully accessible for persons with disabilities</span>
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
+          <div className="grid md:grid-cols-2 gap-6">
+            <Card>
+              <CardContent className="p-6">
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-conference-primary mr-2">•</span>
+                    <span><strong>State-of-the-art Auditorium:</strong> With seating capacity for 300+ attendees</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-conference-primary mr-2">•</span>
+                    <span><strong>Seminar Halls:</strong> Multiple fully-equipped seminar halls for parallel sessions</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-conference-primary mr-2">•</span>
+                    <span><strong>High-speed Wi-Fi:</strong> Throughout the venue</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-conference-primary mr-2">•</span>
+                    <span><strong>Exhibition Area:</strong> For sponsors and industry partners</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-conference-primary mr-2">•</span>
+                    <span><strong>Dining Facilities:</strong> For breakfast, lunch, and refreshments</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-conference-primary mr-2">•</span>
+                    <span><strong>Accessibility:</strong> The venue is fully accessible for persons with disabilities</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden">
+              <CardContent className="p-0">
+                <img 
+                  src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800&auto=format&fit=crop"
+                  alt="Modern Conference Facilities"
+                  className="w-full h-full object-cover"
+                />
+              </CardContent>
+            </Card>
+          </div>
         </section>
       </div>
     </div>

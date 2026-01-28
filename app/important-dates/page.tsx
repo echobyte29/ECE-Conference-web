@@ -14,7 +14,7 @@ export default function ImportantDatesPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-conference-background to-conference-muted">
       {/* Header Section */}
-      <section className="pt-24 pb-16">
+      <section className="pt-32 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-6 py-3 bg-conference-accent/10 rounded-full border border-conference-accent/20 mb-8">

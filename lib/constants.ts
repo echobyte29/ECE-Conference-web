@@ -144,6 +144,8 @@ export const COMMITTEES = {
     { name: "Dr Rahul LR", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
     { name: "Dr. Purva Sharma", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
     { name: "Mr Satya Prasad Gaddamedi", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
+    { name: "Dr. J. Lakshmi Prasanna", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
+    { name: "Dr. M. Srinivasulu", affiliation: "Assistant Professor, KLH Bowrampet Campus" },
   ],
   internationalAdvisory: [
     { name: "Dr. Sesham Srinu", affiliation: "Senior Lecturer, University of Namibia" },

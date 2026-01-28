@@ -154,9 +154,154 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Important Dates Section */}
-      <section className="py-20 bg-white">
+      {/* Research Focus Areas Section */}
+      <section className="py-20 bg-gradient-to-br from-white via-conference-muted/20 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-light text-conference-primary mb-6 tracking-tight">
+              Key <span className="font-semibold text-conference-accent">Research Areas</span>
+            </h2>
+            <div className="w-24 h-0.5 mx-auto mb-8 bg-gradient-to-r from-conference-accent to-conference-secondary"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <div className="relative h-48">
+                <img 
+                  src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop"
+                  alt="Artificial Intelligence"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">AI & Machine Learning</h3>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <p className="text-gray-700 text-sm">
+                  Deep Learning, Edge AI, Explainable AI, and AI-driven systems for real-world applications
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <div className="relative h-48">
+                <img 
+                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop"
+                  alt="Robotics"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">Robotics & IoT</h3>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <p className="text-gray-700 text-sm">
+                  AI-driven robotics, Industrial IoT, Smart systems, and autonomous technologies
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <div className="relative h-48">
+                <img 
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop"
+                  alt="VLSI and Hardware"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">VLSI & Hardware</h3>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <p className="text-gray-700 text-sm">
+                  FPGA design, Hardware security, On-chip intelligence, and secure IC design
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <div className="relative h-48">
+                <img 
+                  src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&auto=format&fit=crop"
+                  alt="Communication Systems"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">5G/6G Networks</h3>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <p className="text-gray-700 text-sm">
+                  Next-gen wireless, Secure communication, and advanced networking protocols
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <div className="relative h-48">
+                <img 
+                  src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800&auto=format&fit=crop"
+                  alt="Cryptography"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">Cryptography</h3>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <p className="text-gray-700 text-sm">
+                  Lightweight cryptography, Post-quantum security, and blockchain technologies
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <div className="relative h-48">
+                <img 
+                  src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop"
+                  alt="Cyber-Physical Systems"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">Embedded Systems</h3>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <p className="text-gray-700 text-sm">
+                  Real-time systems, Cyber-physical applications, and edge computing solutions
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/call-for-papers">
+              <Button className="bg-conference-accent text-white hover:bg-conference-accent/90 px-8 py-4 text-base font-medium shadow-lg hover:shadow-xl transition-all duration-200 group">
+                Explore All Topics
+                <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Important Dates Section */}
+      <section className="py-20 bg-white relative overflow-hidden">
+        {/* Background decorative image */}
+        <div className="absolute inset-0 opacity-5">
+          <img 
+            src="https://images.unsplash.com/photo-1506784365847-bbad939e9335?w=1920&auto=format&fit=crop"
+            alt="Background"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-6 py-3 bg-conference-accent/10 rounded-full border border-conference-accent/20 mb-8">
               <FiClock className="mr-3 text-conference-accent" />
@@ -287,48 +432,58 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-gradient-to-br from-conference-primary/5 via-white to-conference-accent/5 relative overflow-hidden">
+        {/* Decorative background */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 right-10 w-96 h-96 bg-conference-accent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 left-10 w-96 h-96 bg-conference-primary rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="section-title">Contact Us</h2>
-            <Separator className="w-24 h-1 mx-auto my-4 bg-conference-primary" />
+            <h2 className="text-3xl md:text-4xl font-light text-conference-primary mb-6 tracking-tight">
+              Get in <span className="font-semibold text-conference-accent">Touch</span>
+            </h2>
+            <div className="w-24 h-0.5 mx-auto mb-6 bg-gradient-to-r from-conference-accent to-conference-secondary"></div>
             <p className="text-lg text-gray-700 max-w-4xl mx-auto">
               For any queries related to the conference, please feel free to contact us.
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-            <Card className="w-full md:w-auto">
-              <CardContent className="p-8">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="p-2 rounded-full bg-conference-primary text-white">
-                    <FiMail className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg">Email</h3>
-                    <p className="text-gray-600">will be announced soon</p>
-                  </div>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <Card className="transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <CardContent className="p-8 text-center">
+                <div className="inline-flex items-center justify-center p-4 rounded-full bg-conference-primary/10 mb-4">
+                  <FiMail className="h-8 w-8 text-conference-primary" />
                 </div>
+                <h3 className="font-semibold text-xl mb-2">Email</h3>
+                <p className="text-gray-600">will be announced soon</p>
               </CardContent>
             </Card>
 
-            <Card className="w-full md:w-auto">
-              <CardContent className="p-8">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="p-2 rounded-full bg-conference-primary text-white">
-                    <FiMapPin className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg">Address</h3>
-                    <p className="text-gray-600">
-                      Department of ECE,
-                      <br />
-                      KL University, Bachupally,
-                      <br />
-                      Hyderabad
-                    </p>
-                  </div>
+            <Card className="transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <CardContent className="p-8 text-center">
+                <div className="inline-flex items-center justify-center p-4 rounded-full bg-conference-accent/10 mb-4">
+                  <FiMapPin className="h-8 w-8 text-conference-accent" />
                 </div>
+                <h3 className="font-semibold text-xl mb-2">Address</h3>
+                <p className="text-gray-600">
+                  Department of ECE,
+                  <br />
+                  KL University, Bachupally,
+                  <br />
+                  Hyderabad
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <img 
+                  src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?w=800&auto=format&fit=crop"
+                  alt="Contact Us"
+                  className="w-full h-full object-cover"
+                />
               </CardContent>
             </Card>
           </div>
