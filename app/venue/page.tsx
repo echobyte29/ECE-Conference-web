@@ -5,7 +5,7 @@ import { FiMapPin, FiInfo, FiNavigation2 } from "react-icons/fi";
 import { CONFERENCE_VENUE } from "@/lib/constants";
 
 export const metadata = {
-  title: "Venue | ROCV-AI 2026",
+  title: "Venue | ICNVCT 2025",
   description: "Venue information for ROCV-AI 2026 at KLEF Bowrampet Campus, Hyderabad",
 };
 
@@ -53,7 +53,7 @@ export default function VenuePage() {
               {/* Campus Image */}
               <div className="relative w-full h-80 rounded-lg overflow-hidden mb-6">
                 <img 
-                  src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=1200&auto=format&fit=crop"
+                  src="/img1.jpeg"
                   alt="Modern University Campus"
                   className="w-full h-full object-cover"
                 />
@@ -116,6 +116,44 @@ export default function VenuePage() {
                     Hyderabad has pleasant weather in May, with average temperatures ranging from 25°C to 35°C.
                     The conference is scheduled during a comfortable time to visit the city and participate in 
                     academic activities.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* Local Visit */}
+        <section className="mb-12">
+          <h2 className="section-subtitle mb-6">Local Visit</h2>
+          <Card>
+            <CardContent className="p-0">
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="relative h-64 md:h-auto">
+                  <img 
+                    src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0648?w=800&auto=format&fit=crop"
+                    alt="Hyderabad Tourist Attractions"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="mb-4">
+                    <span className="inline-block bg-conference-primary text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+                      May 17, 2026 - Day 3
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold mb-4 text-conference-secondary">
+                    Explore Hyderabad
+                  </h3>
+                  <p className="text-gray-700 mb-4">
+                    On the third day of the conference (May 17, 2026), participants will be taken on a local visit 
+                    to selected places in Hyderabad. This is a great opportunity to experience the rich cultural 
+                    heritage and modern attractions of the "City of Pearls."
+                  </p>
+                  <p className="text-gray-700">
+                    The visit will include iconic landmarks and tourist attractions, allowing participants to 
+                    explore Hyderabad's unique blend of tradition and modernity. More details about the itinerary 
+                    will be shared closer to the conference dates.
                   </p>
                 </div>
               </div>

@@ -1,6 +1,6 @@
-export const CONFERENCE_NAME = "International Conference on Emerging Trends in Robotics, Communication, VLSI, and Artificial Intelligence";
-export const CONFERENCE_SHORT_NAME = "ROCV-AI 2026";
-export const CONFERENCE_DATE = "May 15-16, 2026";
+export const CONFERENCE_NAME = "International Conference on NextGen VLSI & Communication Technologies";
+export const CONFERENCE_SHORT_NAME = "ICNVCT 2025";
+export const CONFERENCE_DATE = "May 15-17, 2026";
 export const CONFERENCE_VENUE = "KLEF Bowrampet Campus, Hyderabad, India";
 export const CONFERENCE_EMAIL = "dr.kirankumar@klh.edu.in";
 
@@ -9,7 +9,8 @@ export const IMPORTANT_DATES = [
   { date: "April 25, 2026", description: "Notification of Acceptance" },
   { date: "May 01, 2026", description: "Submission of Camera-Ready Paper" },
   { date: "May 01, 2026", description: "Conference Registration" },
-  { date: "May 15-16, 2026", description: "Conference Dates" },
+  { date: "May 15-17, 2026", description: "Conference Dates" },
+  { date: "May 17, 2026", description: "Local Visit to Hyderabad" },
 ];
 
 export const TRACKS = [
@@ -188,7 +189,7 @@ export const COMMITTEES = {
 export const UNIVERSITY_INFO = {
   name: "Koneru Lakshmaiah Education Foundation (KLEF)",
   shortDesc: "Deemed to be university established in 1980-81, offering outstanding undergraduate, postgraduate and doctoral programmes in engineering and management.",
-  longDesc: "Koneru Lakshmaiah Education Foundation (KLEF) Deemed to be university was established in 1980-81, as KL College of Engineering, which was upgraded to KL College of Engineering Autonomous in 2006 by UGC, and was declared as a Deemed to be University in 2009 by UGC, MHRD Government of India. The first off campus, has come up in A.Y 2018-2019 at Hyderabad, Moinabad, Aziznagar Road, near TSPA Junction, on the road leading to Chilkur Balaji temple. KLEF Deemed to be University has inaugurated its second off campus in A.Y. 2023-2024 in Bowrampet Village, Medchal, Malkajgiri District, Greater Hyderabad. KLEF (Deemed to be University) offers outstanding undergraduate, postgraduate and doctoral programmes in engineering and management streams from two campuses Vijayawada and Hyderabad. KLEF has established an ecosystem to promote innovation, including a centre for Innovation, Incubation and Entrepreneurship Cell (IIEC), leading to start-ups in different disciplines. Through publishing research articles in various national and international refereed journals, particularly in Scopus/WoS/SCI Indexed journals, research has taken a quantum leap towards improving its quality, resulting in good h-index.",
+  longDesc: "Koneru Lakshmaiah Education Foundation (KLEF) Deemed to be university was established in 1980-81, as KL College of Engineering, which was upgraded to KL College of Engineering Autonomous in 2006 by UGC, and was declared as a Deemed to be University in 2009 by UGC, MHRD Government of India. In 2019 UGC, MHRD declared this institution as Category I Institution. The first off campus has come up in A.Y 2018-2019 at Hyderabad, Moinabad, Aziznagar Road, near TSPA Junction, on the road leading to Chilkur Balaji temple. KLEF Deemed to be University has inaugurated its second off campus in A.Y. 2023-2024 in Bowrampet Village, Medchal, Malkajgiri District, Greater Hyderabad. KLEF (Deemed to be University) offers outstanding undergraduate, postgraduate and doctoral programmes in engineering and management streams from two campuses Vijayawada and Hyderabad. KLEF has established an ecosystem to promote innovation, including a centre for Innovation, Incubation and Entrepreneurship Cell (IIEC), leading to start-ups in different disciplines. Through publishing research articles in various national and international refereed journals, particularly in Scopus/WoS/SCI Indexed journals, research has taken a quantum leap towards improving its quality, resulting in good h-index.",
 };
 
 export const DEPARTMENT_INFO = {
@@ -199,7 +200,7 @@ export const DEPARTMENT_INFO = {
 };
 
 export const CONFERENCE_INFO = {
-  name: "International Conference on Emerging Trends in Robotics, Communication, VLSI, and Artificial Intelligence (ROCV-AI 2026)",
-  desc: "ROCV-AI 2026 (International Conference on Emerging Trends in Robotics, Communication, VLSI, and Artificial Intelligence) aims to serve as a premier global forum for researchers, academicians, and industry professionals. The conference focuses on emerging and integrated intelligent systems that seamlessly combine robotics, electronics, VLSI hardware, embedded systems, communication technologies, and advanced AI algorithms. Key thrust areas include AI-driven robotics, on-chip intelligence and VLSI architectures, secure and low-power electronic systems, and next-generation communication technologies. ROCV-AI 2026 emphasizes advancements in Artificial Intelligence, Machine Learning, and Deep Learning for intelligent, connected, and real-time robotic and cyber-physical applications. The conference also highlights innovations in algorithms for sensing, perception, control, signal processing, communication, networking, and system optimization, with a strong focus on hardware-aware AI, edge intelligence, and communication-efficient robotic systems. It encourages interdisciplinary research addressing challenges related to security, reliability, scalability, energy efficiency, and interoperability in intelligent electronic and communication systems. Industry-focused sessions and expert keynote talks aim to bridge the gap between theoretical research and real-world deployment. ROCV-AI 2026 promotes collaboration, knowledge exchange, and impactful research in AI-powered robotics, VLSI systems, electronics, and communication technologies.",
-  organizer: "Department of Electronics and Communication Engineering, KLEF Bowrampet Campus, Hyderabad",
+  name: "International Conference on NextGen VLSI & Communication Technologies (ICNVCT 2025)",
+  desc: "The International Conference on NextGen VLSI & Communication Technologies (ICNVCT 2025) aims to provide a comprehensive platform for researchers, academicians, and industry professionals to exchange innovative ideas and present their latest research findings in the field of electronics and communication engineering. With a broad scope, ICNVCT 2025 will cover a diverse range of topics, including electronics, VLSI systems, signal processing, wireless communication systems, and embedded systems. The conference seeks to foster collaboration and knowledge sharing among participants, playing a pivotal role in shaping the future of these rapidly evolving fields. ICNVCT 2025 will feature keynote talks by distinguished speakers from renowned institutions, alongside technical sessions for paper presentations. Researchers are encouraged to submit original contributions addressing current trends and challenges in electronics, communications, signal processing, VLSI and embedded systems. Through this exchange, ICNVCT 2025 aims to advance the frontiers of these disciplines and inspire future developments.",
+  organizer: "Department of Electronics and Communication Engineering, KL University, Bachupally Campus, Hyderabad",
 };

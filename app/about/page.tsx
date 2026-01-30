@@ -9,8 +9,8 @@ import {
 import { FiMap, FiUsers, FiCalendar } from "react-icons/fi";
 
 export const metadata = {
-  title: "About | ROCV-AI 2026",
-  description: "About the University, ECE Department and ROCV-AI 2026 Conference",
+  title: "About | ICNVCT 2025",
+  description: "About the University, ECE Department and ICNVCT 2025 Conference",
 };
 
 export default function AboutPage() {
@@ -32,7 +32,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-0">
               <div className="relative h-64 md:h-auto">
                 <img 
-                  src="https://images.unsplash.com/photo-1562774053-701939374585?w=800&auto=format&fit=crop"
+                  src="/img2.jpeg"
                   alt="University Campus"
                   className="w-full h-full object-cover"
                 />
@@ -41,10 +41,10 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold mb-4 text-conference-secondary">
                   {UNIVERSITY_INFO.name}
                 </h3>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-700 mb-4 text-justify">
                   {UNIVERSITY_INFO.shortDesc}
                 </p>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-justify">
                   {UNIVERSITY_INFO.longDesc}
                 </p>
               </div>
@@ -68,13 +68,13 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold mb-4 text-conference-secondary">
                   {DEPARTMENT_INFO.name}
                 </h3>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-700 mb-4 text-justify">
                   <strong>Established:</strong> {DEPARTMENT_INFO.established}
                 </p>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-700 mb-4 text-justify">
                   <strong>Programs Offered:</strong> {DEPARTMENT_INFO.programs}
                 </p>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-justify">
                   {DEPARTMENT_INFO.desc}
                 </p>
               </div>
@@ -96,7 +96,7 @@ export default function AboutPage() {
           <div className="p-2 mr-3 rounded-full bg-conference-primary/10">
             <FiCalendar className="h-6 w-6 text-conference-primary" />
           </div>
-          <h2 className="section-subtitle">About ROCV-AI 2026</h2>
+          <h2 className="section-subtitle">About ICNVCT 2025</h2>
         </div>
         <Card>
           <CardContent className="p-0">
@@ -114,10 +114,10 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="p-6">
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 {CONFERENCE_INFO.desc}
               </p>
-              <p className="text-gray-700 mt-4">
+              <p className="text-gray-700 mt-4 text-justify">
                 <strong>Organized by:</strong> {CONFERENCE_INFO.organizer}
               </p>
             </div>
