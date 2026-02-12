@@ -46,6 +46,12 @@ export default function CommitteePage() {
         />
 
         <CommitteeSection
+          title="Coordinators"
+          members={COMMITTEES.coordinators}
+          delay={0.55}
+        />
+
+        <CommitteeSection
           title="Steering Committee"
           members={COMMITTEES.steeringCommittee}
           delay={0.6}

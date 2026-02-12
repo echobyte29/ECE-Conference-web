@@ -52,6 +52,11 @@ const Footer = () => {
                   Registration
                 </Link>
               </li>
+              <li>
+                <Link href="/sponsorship" className="hover:text-conference-accent transition-colors font-light text-white/80">
+                  Sponsorship
+                </Link>
+              </li>
             </ul>
           </div>
 
